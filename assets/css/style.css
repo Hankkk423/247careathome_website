@@ -1,0 +1,130 @@
+body {
+    font-size: 1rem;
+    font-family: Lato, sans-serif;
+    color: #222324;
+    line-height: 1.6;
+    background-color: #fff;
+}
+
+a {
+    color: #13b1cd;
+    text-decoration: none;
+}
+
+
+
+
+.s-header__navbar {
+    background: transparent;
+    transition-duration: 300ms;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+
+.s-header__container {
+    width: 100%;
+    height: auto;
+    display: table;
+    padding: 0.75rem 1.875rem;
+}
+
+.s-header__container:before, 
+.s-header__container:after {
+    content: " ";
+    display: table;
+}
+
+.s-header__navbar-row {
+    position: relative;
+    display: table-row;
+    clear: both;
+}
+
+.s-header__navbar-row-col {
+    width: 50%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.s-header__logo {
+    position: relative;
+    z-index: 9999;
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+.s-header__logo-link {
+    display: inline-block;
+    padding: 1rem 0;
+}
+
+.s-header__logo-img-default, 
+.s-header__logo-img-shrink {
+    display: block;
+    transition-duration: 300ms;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+
+.s-header__logo-img-default {
+    opacity: 1;
+}
+
+.s-header__logo-img-shrink {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    opacity: 0;
+}
+
+.s-header__trigger {
+    position: relative;
+    z-index: 9999;
+    width: 3.125rem;
+    height: 3.125rem;
+    float: right;
+    overflow: hidden;
+    transition-duration: 500ms;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+
+.s-header__trigger-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    width: 1.375rem;
+    height: 0.0625rem;
+    background: #bd1818;
+    transform: translate3d(-50%, -50%, 0);
+    transition-duration: 500ms;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+
+.s-header__trigger-icon:before {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    content: " ";
+    backface-visibility: hidden;
+    transition: transform 0.5s, width 0.5s, top 0.3s;
+    transform: translate3d(0, 0.4375rem, 0);
+}
+
+.s-header__trigger-icon:after {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    content: " ";
+    backface-visibility: hidden;
+    transition: transform 0.5s, width 0.5s, top 0.3s;
+    transform: translate3d(0, -0.4375rem, 0);
+}

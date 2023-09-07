@@ -177,7 +177,8 @@ a {
     background: rgba(34, 35, 36, 0);
     visibility: hidden;
     transition: all 1s ease-in 0.4s;
-    overflow-y: auto; /* Add this to enable vertical scrolling */
+    overflow-y: auto;
+    /* Add this to enable vertical scrolling */
 }
 
 .s-header-bg-overlay.-is-open {
@@ -197,6 +198,7 @@ a {
         padding: 4.5rem 0;
     }
 }
+
 /* End For mobile */
 
 /* Custom bootstrap */
@@ -231,6 +233,7 @@ a {
         opacity: 1;
     }
 }
+
 /* End For mobile */
 
 @media (min-width: 34em) {
@@ -347,24 +350,25 @@ a {
         opacity: 1;
     }
 }
+
 /* End For mobile */
 
 @media (min-width: 34em) {
     .s-header-bg-overlay.-is-open .s-header__action-item {
         opacity: 1;
-      }
+    }
 
-      .s-header-bg-overlay.-is-open .s-header__action-item:nth-child(1) {
+    .s-header-bg-overlay.-is-open .s-header__action-item:nth-child(1) {
         transition: all 0.4s 0.4s ease-out;
-      }
+    }
 
-      .s-header-bg-overlay.-is-open .s-header__action-item:nth-child(2) {
+    .s-header-bg-overlay.-is-open .s-header__action-item:nth-child(2) {
         transition: all 0.4s 0.8s ease-out;
-      }
+    }
 
-      .s-header-bg-overlay.-is-open .s-header__action-item:nth-child(3) {
+    .s-header-bg-overlay.-is-open .s-header__action-item:nth-child(3) {
         transition: all 0.4s 1.2s ease-out;
-      }
+    }
 }
 
 .s-header__action-link {
@@ -397,3 +401,77 @@ a {
 }
 
 
+
+
+
+/* Custom bootstrap */
+.s-hero .container {
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+/* End Custom bootstrap */
+
+.s-hero .hero-text {
+    font-size: 80px ;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 575.98px) {
+    .s-hero .hero-text {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .s-hero .hero-text {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .s-hero .hero-text {
+        font-size: 60px;
+    }
+}
+
+.s-hero .text-red {
+    color: #f04f1e;
+    position: relative;
+}
+
+.s-hero .grad-an {
+    display: inline-block;
+    background-image: linear-gradient(-45deg, #f04f1e, #f04f1e, #191919, #191919, #f04f1e, #f04f1e) !important;
+    background-size: 400% !important;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: Gradient 5s ease infinite !important;
+    -moz-animation: Gradient 5s ease infinite !important;
+    animation: Gradient 5s ease infinite !important;
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 50% 100%;
+    }
+
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+.s-hero .btn-custom {
+    color: #fff;
+    background-color: #46acc2;
+    border-color: #46acc2;
+    border-radius: 20px;
+}

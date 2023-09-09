@@ -402,8 +402,7 @@ a {
 
 
 
-
-
+/*** Hero ***/
 /* Custom bootstrap */
 .s-hero .container {
     margin-top: 150px;
@@ -475,3 +474,167 @@ a {
     border-color: #46acc2;
     border-radius: 20px;
 }
+
+
+
+/*** Slide ***/
+.s-slide .slide{
+
+}
+
+.s-slide .carousel-item {
+    height: 450px; /* Set your desired height */
+    overflow: hidden;
+}
+
+.s-slide .carousel-item img {
+    height: 100%; /* Ensure the image fills the container's height */
+    width: 100%; /* Ensure the image fills the container's width */
+    object-fit: cover; /* Crop the image to cover the container while maintaining aspect ratio */
+}
+
+
+
+
+
+/*** Eligible ***/
+.s-eligible .img-place {
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    /* border-radius: 5%; */
+}
+
+.s-eligible .img-place img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+.s-eligible .heading-2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    line-height: 1.1;
+}
+
+.s-eligible .btn-row {
+    margin: 30px -10px 0;
+    /* margin-bottom: 50px; */
+}
+
+/* Custom bootstrap */
+.s-eligible .btn-row .btn-primary {
+    margin: 5px 12px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #2485ba;
+}
+/* End Custom bootstrap */
+
+
+
+/*** Bullet Point ***/
+.s-bullet {
+    margin-top: 70px;
+    margin-bottom: 20px;
+
+}
+
+.s-bullet .heading-1 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    line-height: 1.1;
+}
+
+.s-bullet .text-red {
+    color: #f04f1e;
+    position: relative;
+}
+
+.s-bullet .grad-an {
+    display: inline-block;
+    background-image: linear-gradient(-45deg, #f04f1e, #f04f1e, #191919, #191919, #f04f1e, #f04f1e) !important;
+    background-size: 400% !important;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: Gradient 5s ease infinite !important;
+    -moz-animation: Gradient 5s ease infinite !important;
+    animation: Gradient 5s ease infinite !important;
+}
+
+/* Custon bootstrap */
+.s-bullet .btn-primary {
+    color: #191919;
+    background-color: #fff;
+    border-color: #f04f1e;
+    padding: 10px 23px 12px;
+    font-size: 15px;
+    font-weight: 600;
+}
+/* Custon bootstrap */
+
+.s-bullet .content-container {
+    margin-top: 80px;
+}
+
+.s-bullet .bullet-item {
+    display: flex;
+    flex-direction: column;
+    /* padding-left: 30px;
+    padding-right: 30px; */
+    padding: 0 5px;
+    margin: 0 5px;
+}
+
+.s-bullet .bullet-item .heading-2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+
+
+
+/* Frequent Question */
+.s-question {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.s-question .bg-banner {
+    padding-bottom: 100px;
+    padding-top: 100px;
+    background-color: #11b97c;
+    border-radius: 10% 30%;
+}
+
+.s-question .heading-2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.s-question .btn-custom {
+    background-color: #fff;
+    color: #3aaf4a;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 50px;
+    font-size: 18px;
+    line-height: 1.2;
+    transition: .3s;
+}
+
+

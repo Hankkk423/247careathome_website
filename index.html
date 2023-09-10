@@ -39,6 +39,9 @@
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" /> -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet"
         type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" rel="stylesheet">
+
 
     <!-- Custom Style -->
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
@@ -249,6 +252,33 @@
 
 
 
+
+
+    <!-- Brand Bar -->
+    <div class="s-brand">
+        <div class="brand-bar-wrapper py-5" id="brandBar">
+            <div class="brand-bar">
+                <!-- Add your brand logos here -->
+                <img src="assets/imgs/logo-s01.svg" alt="Logo 1" class="brand-logo">
+                <img src="assets/imgs/logo-s01.svg" alt="Logo 2" class="brand-logo">
+                <img src="assets/imgs/logo-s01.svg" alt="Logo 3" class="brand-logo">
+                <!-- Add more logos as needed -->
+                <img src="assets/imgs/logo-s02.svg" alt="Logo 1" class="brand-logo">
+                <img src="assets/imgs/logo-s02.svg" alt="Logo 2" class="brand-logo">
+                <img src="assets/imgs/logo-s02.svg" alt="Logo 3" class="brand-logo">
+            </div>
+            
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
     <!-- Eligible -->
     <div class="s-eligible">
         <div class="container my-4 py-1">
@@ -396,43 +426,29 @@
 
 
 
-
-
-    <!-- Brand Bar -->
-    <div class="s-brand">
-        <div class="brand-bar-wrapper" id="brandBar">
-            <div class="brand-bar">
-                <!-- Add your brand logos here -->
-                <img src="assets/imgs/logo-s01.svg" alt="Logo 1" class="brand-logo">
-                <img src="assets/imgs/logo-s01.svg" alt="Logo 2" class="brand-logo">
-                <img src="assets/imgs/logo-s01.svg" alt="Logo 3" class="brand-logo">
-                <!-- Add more logos as needed -->
-                <img src="assets/imgs/logo-s02.svg" alt="Logo 1" class="brand-logo">
-                <img src="assets/imgs/logo-s02.svg" alt="Logo 2" class="brand-logo">
-                <img src="assets/imgs/logo-s02.svg" alt="Logo 3" class="brand-logo">
+    <!-- Fun Fact -->
+    <div class="s-funfact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-3 py-4 wow fadeIn">
+                    <h1 class="counter-number" data-toggle="counter-up">649</h1>
+                    <span>Cups of Coffee Drank</span>
+                </div>
+                <div class="col-md-6 col-lg-3 py-4 wow fadeIn">
+                    <h1 class="counter-number" data-toggle="counter-up">9999</h1>
+                    <span>Code Lines Written</span>
+                </div>
+                <div class="col-md-6 col-lg-3 py-4 wow fadeIn">
+                    <h1 class="counter-number" data-toggle="counter-up">468</h1>
+                    <span>Brainstorming Sessions Survived</span>
+                </div>
+                <div class="col-md-6 col-lg-3 py-4 wow fadeIn">
+                    <h1 class="counter-number" data-toggle="counter-up">0</h1>
+                    <span>Times Made the Compiler Happy</span>
+                </div>
             </div>
-            <!-- <div class="brand-bar">
-                <img src="assets/imgs/logo-s02.svg" alt="Logo 1" class="brand-logo">
-                <img src="assets/imgs/logo-s02.svg" alt="Logo 2" class="brand-logo">
-                <img src="assets/imgs/logo-s02.svg" alt="Logo 3" class="brand-logo">
-                <img src="assets/imgs/logo-s02.svg" alt="Logo 1" class="brand-logo">
-                <img src="assets/imgs/logo-s02.svg" alt="Logo 2" class="brand-logo">
-                <img src="assets/imgs/logo-s02.svg" alt="Logo 3" class="brand-logo">
-            </div> -->
         </div>
     </div>
-
-    <!-- <script>
-        // Function to continuously scroll the brand bar
-        function scrollBrandBar() {
-            const brandBar = document.getElementById('brandBar');
-            const clone = brandBar.cloneNode(true); // Clone the brand bar
-            brandBar.parentNode.replaceChild(clone, brandBar); // Replace the original with the clone
-        }
-
-        // Call the scrollBrandBar function at regular intervals
-        setInterval(scrollBrandBar, 10000); // Adjust the interval as needed (in milliseconds)
-    </script> -->
 
 
 
@@ -559,6 +575,66 @@
             </div>
         </div>
     </div>
+
+
+
+
+
+
+    <!-- Testimonial Start -->
+    <section id="s_testimonial">
+        <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h1 class="display-5 mb-5">Testimonial</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item text-center">
+                        <img class="img-fluid bg-light p-2 mx-auto mb-3" src="assets/imgs/testimonial-customer1.jpeg"
+                            style="width: 90px; height: 90px;">
+                        <div class="testimonial-text text-center p-4">
+                            <p>Choosing this real estate company was the best decision I made. Their personalized
+                                approach
+                                and attention
+                                to detail helped me find a property that perfectly matched my preferences. I couldn't be
+                                happier with their service.</p>
+                            <h5 class="mb-1">Client Name</h5>
+                            <span class="fst-italic">Property Seller</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-item text-center">
+                        <img class="img-fluid bg-light p-2 mx-auto mb-3" src="assets/imgs/testimonial-customer1.jpeg"
+                            style="width: 90px; height: 90px;">
+                        <div class="testimonial-text text-center p-4">
+                            <p>I'm extremely satisfied with the support I received from this real estate company. Their
+                                team
+                                went above
+                                and beyond to help me find a property that exceeded my expectations. Their dedication is
+                                truly commendable.</p>
+                            <h5 class="mb-1">Client Name</h5>
+                            <span class="fst-italic">Home Buyer</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-item text-center">
+                        <img class="img-fluid bg-light p-2 mx-auto mb-3" src="assets/imgs/testimonial-customer1.jpeg"
+                            style="width: 90px; height: 90px;">
+                        <div class="testimonial-text text-center p-4">
+                            <p>Working with this real estate company has been an amazing experience. Their expertise and
+                                professionalism
+                                have helped me find the perfect property that fits my needs and budget. I highly
+                                recommend
+                                their services.</p>
+                            <h5 class="mb-1">Client Name</h5>
+                            <span class="fst-italic">Real Estate Investor</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial End -->
+
+
 
 
 
@@ -709,7 +785,7 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/waypoints@4.0.1/lib/jquery.waypoints.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery.counterup@2.1.0/jquery.counterup.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
 
     <!-- Custom JavaScript -->
     <script type="text/javascript" src="assets/js/script.js"></script>

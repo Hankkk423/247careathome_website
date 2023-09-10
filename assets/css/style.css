@@ -499,6 +499,61 @@ a {
 
 
 
+
+
+/*** Brand Bar ***/
+.brand-bar-wrapper {
+    
+    width: 100%;
+    /* right: 100%; */
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+.brand-bar {
+    display: inline-block;
+    /* animation: scroll 20s linear infinite; */
+    
+    animation: scroll 10s infinite linear;
+    /* animation-duration: calc(var(--item-speed) * var(--item-count, 8)); */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translate3d(110%, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+/* @keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+} */
+
+/* Add your brand logo styles here */
+.brand-logo {
+    width: 100px;
+    height: auto;
+    margin-right: 100px;
+    /* Adjust the spacing between logos */
+}
+
+
+
+
+
+
+
+
 /*** Eligible ***/
 .s-eligible .img-place {
     height: 300px;
@@ -574,57 +629,38 @@ a {
 
 
 
-
-/*** Brand Bar ***/
-.brand-bar-wrapper {
-    
+/*** Fun Fact ***/
+.s-funfact {
+    position: relative;
+    display: block;
     width: 100%;
-    /* right: 100%; */
-    white-space: nowrap;
     overflow: hidden;
-
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: url(../imgs/bg_banner_01.jpg);
 }
 
-.brand-bar {
-    display: inline-block;
-    /* animation: scroll 20s linear infinite; */
-    
-    animation: scroll 1.8s infinite ease-in-out;
-    /* animation-duration: calc(var(--item-speed) * var(--item-count, 8)); */
+.s-funfact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(41, 36, 36, 0.7);
 }
 
-@keyframes scroll {
-    0% {
-        transform: translate3d(0, 0, 0);
-    }
-
-    100% {
-        transform: translate3d(calc(-50%), 0, 0);
-    }
+/* Custom bootstrap */
+.s-funfact .container {
+    position: relative;
+    z-index: 2;
 }
-
-/* @keyframes scroll {
-    0% {
-        transform: translateX(0%);
-    }
-
-    100% {
-        transform: translateX(-100%);
-    }
-} */
-
-/* Add your brand logo styles here */
-.brand-logo {
-    width: 100px;
-    height: auto;
-    margin-right: 50px;
-    /* Adjust the spacing between logos */
-}
-
-
-
-
-
+/* End Custom bootstrap */
 
 
 
@@ -731,6 +767,92 @@ a {
 }
 
 /* End Custom bootstrap */
+
+
+
+
+
+/*** Testimonial ***/
+.testimonial-carousel::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    z-index: 1;
+}
+
+.testimonial-carousel::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    z-index: 1;
+}
+
+@media (min-width: 768px) {
+    .testimonial-carousel::before,
+    .testimonial-carousel::after {
+        width: 200px;
+    }
+}
+
+@media (min-width: 992px) {
+    .testimonial-carousel::before,
+    .testimonial-carousel::after {
+        width: 300px;
+    }
+}
+
+.testimonial-carousel .owl-item .testimonial-text {
+    border: 5px solid var(--light);
+    transform: scale(.8);
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-text {
+    transform: scale(1);
+}
+
+.testimonial-carousel .owl-nav {
+    position: absolute;
+    width: 350px;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+    transition: .5s;
+    z-index: 1;
+}
+
+.testimonial-carousel:hover .owl-nav {
+    width: 300px;
+    opacity: 1;
+}
+
+.testimonial-carousel .owl-nav .owl-prev,
+.testimonial-carousel .owl-nav .owl-next {
+    position: relative;
+    color: #46acc2;
+    font-size: 45px;
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-nav .owl-prev:hover,
+.testimonial-carousel .owl-nav .owl-next:hover {
+    color: #000000;
+}
+
+
+
+
 
 
 

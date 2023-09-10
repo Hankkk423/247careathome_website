@@ -412,7 +412,7 @@ a {
 /* End Custom bootstrap */
 
 .s-hero .hero-text {
-    font-size: 80px ;
+    font-size: 80px;
     font-weight: 600;
     line-height: 1;
     margin-bottom: 25px;
@@ -478,19 +478,21 @@ a {
 
 
 /*** Slide ***/
-.s-slide .slide{
-
-}
+.s-slide .slide {}
 
 .s-slide .carousel-item {
-    height: 450px; /* Set your desired height */
+    height: 450px;
+    /* Set your desired height */
     overflow: hidden;
 }
 
 .s-slide .carousel-item img {
-    height: 100%; /* Ensure the image fills the container's height */
-    width: 100%; /* Ensure the image fills the container's width */
-    object-fit: cover; /* Crop the image to cover the container while maintaining aspect ratio */
+    height: 100%;
+    /* Ensure the image fills the container's height */
+    width: 100%;
+    /* Ensure the image fills the container's width */
+    object-fit: cover;
+    /* Crop the image to cover the container while maintaining aspect ratio */
 }
 
 
@@ -533,7 +535,101 @@ a {
     font-weight: 700;
     background-color: #2485ba;
 }
+
 /* End Custom bootstrap */
+
+
+
+/*** Feature ***/
+.s-feature .row-first {
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+/* For Mobile */
+@media (max-width: 47.9em) {
+    .s-feature .row-first {
+        margin-top: 50px;
+        margin-bottom: 0px;
+    }
+
+    .s-feature .feature-item {
+        margin-bottom: 30px;
+    }
+}
+
+/* End For Mobile */
+
+.s-feature .media-body {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+.s-feature .media-body .heading-2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #d91239;
+}
+
+
+
+
+
+/*** Brand Bar ***/
+.brand-bar-wrapper {
+    
+    width: 100%;
+    /* right: 100%; */
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+.brand-bar {
+    display: inline-block;
+    /* animation: scroll 20s linear infinite; */
+    
+    animation: scroll 1.8s infinite ease-in-out;
+    /* animation-duration: calc(var(--item-speed) * var(--item-count, 8)); */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(calc(-50%), 0, 0);
+    }
+}
+
+/* @keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+} */
+
+/* Add your brand logo styles here */
+.brand-logo {
+    width: 100px;
+    height: auto;
+    margin-right: 50px;
+    /* Adjust the spacing between logos */
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -578,6 +674,7 @@ a {
     font-size: 15px;
     font-weight: 600;
 }
+
 /* Custon bootstrap */
 
 .s-bullet .content-container {
@@ -601,8 +698,49 @@ a {
 
 
 
+/*** Matrix Number ***/
+.s-matrix .matrix-item {
+    border-right: 1px solid #ccc;
+    padding: 10px 30px;
+}
 
-/* Frequent Question */
+.s-matrix .matrix-item:first-child {
+    padding-left: 0;
+}
+
+.s-matrix .matrix-item:last-child {
+    border-right: 0;
+}
+
+.s-matrix .matrix-item .counter-number {
+    font-size: 35px;
+    font-weight: 400;
+}
+
+/* Custom bootstrap */
+.s-matrix .img-place img {
+    width: 300px;
+    height: auto;
+    /* Maintain aspect ratio */
+    border: 2px solid #ccc;
+    /* Add a border */
+    border-radius: 10px;
+    /* Add rounded corners */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    /* Add a shadow */
+}
+
+/* End Custom bootstrap */
+
+
+
+
+
+
+
+
+
+/*** Frequent Question ***/
 .s-question {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -643,9 +781,7 @@ a {
 
 
 /*** Footer ***/
-.s-footer {
-    
-}
+.s-footer {}
 
 .s-footer .btn-social {
     margin-right: 5px;

@@ -25,7 +25,8 @@ a {
 }
 
 .s-header__navbar {
-    background: transparent;
+    /* background: transparent; */
+    background-color: #fff;
     transition-duration: 300ms;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -35,7 +36,7 @@ a {
     width: 100%;
     height: auto;
     display: table;
-    padding: 0.75rem 1.875rem;
+    padding: 0.3rem 0.875rem;
 }
 
 .s-header__container:before,
@@ -165,6 +166,14 @@ a {
 .-is-active.s-header__trigger circle {
     stroke-dashoffset: 0;
     transition: stroke-dashoffset 0.4s 0.3s;
+}
+
+.s-header .tag-line {
+    background-color: #d9123a;
+    height: 30px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .s-header-bg-overlay {
@@ -503,47 +512,60 @@ a {
 
 /*** Brand Bar ***/
 .brand-bar-wrapper {
-    
     width: 100%;
-    /* right: 100%; */
+    margin: 40px 0;
+    padding: 20px 0;
+    background: white;
     white-space: nowrap;
     overflow: hidden;
+    position: relative;
+}
 
+.brand-bar-wrapper:before,
+.brand-bar-wrapper:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: " ";
+    z-index: 2;
+}
+
+.brand-bar-wrapper:before {
+    left: 0;
+    background: linear-gradient(to left, rgb(255, 255, 255, 0), white);
+}
+
+.brand-bar-wrapper:after {
+    right: 0;
+    background: linear-gradient(to right, rgb(255, 255, 255, 0), white);
+}
+
+.brand-bar-wrapper:hover .brand-bar {
+    /* animation-play-state: paused; */
 }
 
 .brand-bar {
-    display: inline-block;
-    /* animation: scroll 20s linear infinite; */
-    
-    animation: scroll 10s infinite linear;
-    /* animation-duration: calc(var(--item-speed) * var(--item-count, 8)); */
+    display: inline-block;    
+    animation: scroll 15s infinite linear;
 }
 
 @keyframes scroll {
-    0% {
-        transform: translate3d(110%, 0, 0);
+    from {
+        transform: translateX(0);
     }
 
-    100% {
-        transform: translate3d(-100%, 0, 0);
-    }
-}
-
-/* @keyframes scroll {
-    0% {
-        transform: translateX(0%);
-    }
-
-    100% {
+    to {
         transform: translateX(-100%);
     }
-} */
+}
 
 /* Add your brand logo styles here */
 .brand-logo {
     width: 100px;
-    height: auto;
-    margin-right: 100px;
+
+    height: 50px;
+    margin: 0 40px;
     /* Adjust the spacing between logos */
 }
 

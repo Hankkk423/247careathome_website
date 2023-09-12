@@ -41,6 +41,9 @@
         type="text/css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
 
 
     <!-- Custom Style -->
@@ -54,8 +57,8 @@
 
 <body>
 
-    <!--========== HEADER ==========-->
-    <header class="navbar-fixed-top s-header js__header-sticky js__header-overlay">
+    <!-- Header -->
+    <header class="s-header navbar-fixed-top js__header-overlay">
         <!-- Navbar -->
         <div class="s-header__navbar">
             <div class="s-header__container">
@@ -64,9 +67,11 @@
                         <!-- Logo -->
                         <div class="s-header__logo">
                             <a href="index.html" class="s-header__logo-link">
-                                <!-- <img class="s-header__logo-img s-header__logo-img-default" src="img/logo.png" alt="Megakit Logo"> -->
-                                <img class="s-header__logo-img s-header__logo-img-shrink"
-                                    src="assets/imgs/logo-dark.png" alt="Megakit Logo">
+                                <!-- <img class="s-header__logo-img s-header__logo-img" src="assets/imgs/logo-dark.png"
+                                    alt="Megakit Logo"> -->
+
+                                <img class="s-header__logo-img s-header__logo-img" src="assets/imgs/247CAH-logo-01.png"
+                                    alt="Megakit Logo">
                             </a>
                         </div>
                         <!-- End Logo -->
@@ -87,7 +92,7 @@
             <div class="container-fluid text-center tag-line">
                 <div class="row">
                     <div class="col-12">
-                        <p>Life is better at home. Call Us! (123) 456-789</p>
+                        <p>Life Is Better At Home. Call Us! (123) 456-789</p>
                     </div>
                 </div>
             </div>
@@ -97,54 +102,76 @@
         <!-- Overlay -->
         <div class="s-header-bg-overlay js__bg-overlay">
             <!-- Nav -->
-            <nav class="s-header__nav js__scrollbar">
+            <nav class="s-header__nav">
                 <div class="container-fluid">
                     <!-- Menu List -->
                     <ul class="list-unstyled s-header__nav-menu">
-                        <li class="s-header__nav-menu-item"><a
-                                class="s-header__nav-menu-link s-header__nav-menu-link-divider -is-active"
-                                href="index.html">Corporate</a></li>
-                        <li class="s-header__nav-menu-item"><a
-                                class="s-header__nav-menu-link s-header__nav-menu-link-divider"
-                                href="index_app_landing.html">App Landing</a></li>
-                        <li class="s-header__nav-menu-item"><a
-                                class="s-header__nav-menu-link s-header__nav-menu-link-divider"
-                                href="index_portfolio.html">Portfolio</a></li>
-                        <li class="s-header__nav-menu-item"><a
-                                class="s-header__nav-menu-link s-header__nav-menu-link-divider"
-                                href="index_events.html">Events</a></li>
-                        <li class="s-header__nav-menu-item"><a
-                                class="s-header__nav-menu-link s-header__nav-menu-link-divider"
-                                href="index_lawyer.html">Lawyer</a></li>
-                        <li class="s-header__nav-menu-item"><a
-                                class="s-header__nav-menu-link s-header__nav-menu-link-divider"
-                                href="index_clinic.html">Clinic</a></li>
-                        <li class="s-header__nav-menu-item"><a
-                                class="s-header__nav-menu-link s-header__nav-menu-link-divider"
-                                href="index_coming_soon.html">Coming Soon</a></li>
+                        <li class="s-header__nav-menu-item">
+                            <a class="s-header__nav-menu-link s-header__nav-menu-link-divider -is-active"
+                                href="index.html">Corporate
+                            </a>
+                        </li>
+                        <li class="s-header__nav-menu-item">
+                            <a class="s-header__nav-menu-link s-header__nav-menu-link-divider"
+                                href="index_app_landing.html">App Landing
+                            </a>
+                        </li>
+                        <li class="s-header__nav-menu-item">
+                            <a class="s-header__nav-menu-link s-header__nav-menu-link-divider"
+                                href="index_portfolio.html">Portfolio
+                            </a>
+                        </li>
+                        <li class="s-header__nav-menu-item">
+                            <a class="s-header__nav-menu-link s-header__nav-menu-link-divider"
+                                href="index_events.html">Events
+                            </a>
+                        </li>
+                        <li class="s-header__nav-menu-item">
+                            <a class="s-header__nav-menu-link s-header__nav-menu-link-divider"
+                                href="index_lawyer.html">Lawyer
+                            </a>
+                        </li>
+                        <li class="s-header__nav-menu-item">
+                            <a class="s-header__nav-menu-link s-header__nav-menu-link-divider"
+                                href="index_clinic.html">Clinic
+                            </a>
+                        </li>
+                        <li class="s-header__nav-menu-item">
+                            <a class="s-header__nav-menu-link s-header__nav-menu-link-divider"
+                                href="index_coming_soon.html">Coming Soon
+                            </a>
+                        </li>
                     </ul>
                     <!-- End Menu List -->
 
                     <!-- Menu List -->
                     <ul class="list-unstyled s-header__nav-menu">
-                        <li class="s-header__nav-menu-item"><a
-                                class="s-header__nav-menu-link s-header__nav-menu-link-divider"
-                                href="about.html">About</a></li>
-                        <li class="s-header__nav-menu-item"><a
-                                class="s-header__nav-menu-link s-header__nav-menu-link-divider"
-                                href="team.html">Team</a></li>
-                        <li class="s-header__nav-menu-item"><a
-                                class="s-header__nav-menu-link s-header__nav-menu-link-divider"
-                                href="services.html">Services</a></li>
-                        <li class="s-header__nav-menu-item"><a
-                                class="s-header__nav-menu-link s-header__nav-menu-link-divider"
-                                href="events.html">Events</a></li>
-                        <li class="s-header__nav-menu-item"><a
-                                class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="faq.html">FAQ</a>
+                        <li class="s-header__nav-menu-item">
+                            <a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="about.html">About
+                            </a>
                         </li>
-                        <li class="s-header__nav-menu-item"><a
-                                class="s-header__nav-menu-link s-header__nav-menu-link-divider"
-                                href="contacts.html">Contacts</a></li>
+                        <li class="s-header__nav-menu-item">
+                            <a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="team.html">Team
+                            </a>
+                        </li>
+                        <li class="s-header__nav-menu-item">
+                            <a class="s-header__nav-menu-link s-header__nav-menu-link-divider"
+                                href="services.html">Services
+                            </a>
+                        </li>
+                        <li class="s-header__nav-menu-item">
+                            <a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="events.html">Events
+                            </a>
+                        </li>
+                        <li class="s-header__nav-menu-item">
+                            <a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="faq.html">FAQ
+                            </a>
+                        </li>
+                        <li class="s-header__nav-menu-item">
+                            <a class="s-header__nav-menu-link s-header__nav-menu-link-divider"
+                                href="contacts.html">Contacts
+                            </a>
+                        </li>
                     </ul>
                     <!-- End Menu List -->
                 </div>
@@ -154,10 +181,10 @@
             <!-- Action -->
             <ul class="list-inline s-header__action--lb">
                 <li class="s-header__action-item">
-                    <a class="s-header__action-link -is-active" href="#">En</a>
+                    <a class="s-header__action-link -is-active" href="#">English</a>
                 </li>
                 <li class="s-header__action-item">
-                    <a class="s-header__action-link" href="#">Fr</a>
+                    <a class="s-header__action-link" href="#">Vietnamese</a>
                 </li>
             </ul>
             <!-- End Action -->
@@ -187,20 +214,20 @@
         </div>
         <!-- End Overlay -->
     </header>
-    <!--========== END HEADER ==========-->
+    <!-- End Header -->
 
 
     <!-- Hero Section -->
     <div class="s-hero bg-image d-flex align-items-center justify-content-center">
         <div class="container text-center text-dark">
-            <h1 class="hero-text">
+            <h1 class="hero-text wow flipInX">
                 <span class="text-red grad-an">
                     Faster, smarter
                 </span>
                 welcome to our website
             </h1>
             <!-- <p>Your message or description goes here.</p> -->
-            <a href="#" class="btn btn-custom p-2">Contact Us</a>
+            <a href="#" class="btn btn-custom wow fadeInDownBig">Contact Us</a>
         </div>
     </div>
     <!-- End Hero Section -->
@@ -208,15 +235,15 @@
 
 
     <!-- Slide -->
-    <div class="s-slide">
+    <div class="s-slide wow bounceIn">
         <div class="container-fluid py-4">
-            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+            <div id="carouselAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"
+                    <button type="button" data-bs-target="#carouselAutoplaying" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselAutoplaying" data-bs-slide-to="1"
                         aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2"
+                    <button type="button" data-bs-target="#carouselAutoplaying" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
@@ -242,12 +269,12 @@
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoplaying"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoplaying"
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
@@ -293,37 +320,29 @@
 
 
 
-
-
     <!-- Eligible -->
-    <div class="s-eligible">
-        <div class="container my-4 py-1">
+    <div class="s-eligible margin-large-y">
+        <div class="container py-1">
             <div class="row">
-                <div class="col-md-4 col-lg-5">
-                    <div class="container img-place">
+                <div class="col-sm-12 col-md-4 col-lg-5">
+                    <div class="container img-place wow fadeInLeft">
                         <img src="assets/imgs/eligible_s01.jpg" alt="">
                     </div>
                 </div>
-
-                <div class="c0l-md-8 col-lg-6">
+                <div class="col-sm-12 c0l-md-8 col-lg-7">
                     <h2 class="heading-2">
-                        Living with chronic health conditions? We can help.
+                        Living with chronic health conditions? We can help!
                     </h2>
                     <p>
                         Our providers and care teams come to you, bringing care through house call visits.
                         This in-home medical care is designed around understanding your health needs and goals.
                         We work with you and your regular doctors to help you stay well and stay home.
                     </p>
-
                     <div class="btn-row">
-                        <a href="#" class="btn btn-primary">How is Works</a>
-
-                        <a href="#" class="btn btn-primary">Am I Eligible</a>
-
+                        <a href="#" class="btn btn-primary wow fadeInUpBig">How is Works</a>
+                        <a href="#" class="btn btn-primary wow fadeInRightBig">Am I Eligible</a>
                     </div>
-
                 </div>
-
             </div>
         </div>
     </div>
@@ -333,13 +352,25 @@
 
 
 
-
     <!-- Feature -->
-    <div class="s-feature">
+    <div class="s-feature margin-large-y">
         <div class="container">
             <div class="title text-center">
-                <p>Welcome 247</p>
-                <h1>What we can do?</h1>
+                <div class="wow bounceInLeft">
+                    <div class="badge">
+                        24/7 Care At Home
+                    </div>
+                </div>
+
+                <!-- <h1 class="animate-temp">What we can do?</h1> -->
+
+                <div class="typed-text">
+                    <span id="typed-strings" style="display: none;">
+                        <span>what we can do?</span>
+                    </span>
+                    <span id="typed"></span>
+                </div>
+
             </div>
 
             <div class="row row-first">
@@ -347,13 +378,15 @@
                     <div class="feature-item d-flex">
                         <div class="media-icon">
                             <div class="animate-temp">
-                                <i class="fa-solid fa-ranking-star fa-2xl" style="color: #d91239;"></i>
+                                <i class="fa-solid fa-ranking-star fa-2xl"></i>
                             </div>
                         </div>
                         <div class="media-body">
-                            <h2 class="heading-2">4+ Stars</h2>
-                            <p>99% of Home Health Agencies Achieved 4 Stars
-                                or Higher in CMS Quality
+                            <h2 class="heading-2">Covered by your health plan</h2>
+                            <p>
+                                The Landmark program works with health plans to improve access to care for patients with
+                                multiple chronic conditions. Landmark's team-based care is available often at no cost to
+                                you.
                             </p>
                         </div>
                     </div>
@@ -362,13 +395,14 @@
                     <div class="feature-item d-flex">
                         <div class="media-icon">
                             <div class="animate-temp">
-                                <i class="fa-solid fa-ranking-star fa-2xl" style="color: #d91239;"></i>
+                                <i class="fa-solid fa-ranking-star fa-2xl"></i>
                             </div>
                         </div>
                         <div class="media-body">
-                            <h2 class="heading-2">4+ Stars</h2>
-                            <p>99% of Home Health Agencies Achieved 4 Stars
-                                or Higher in CMS Quality
+                            <h2 class="heading-2">Health care in your home</h2>
+                            <p>
+                                Old-fashioned house calls by medical doctors, nurse practitioners and physician
+                                assistants bring modern medicine to you. Feel better and stay well at home.
                             </p>
                         </div>
                     </div>
@@ -377,13 +411,14 @@
                     <div class="feature-item d-flex">
                         <div class="media-icon">
                             <div class="animate-temp">
-                                <i class="fa-solid fa-ranking-star fa-2xl" style="color: #d91239;"></i>
+                                <i class="fa-solid fa-ranking-star fa-2xl"></i>
                             </div>
                         </div>
                         <div class="media-body">
-                            <h2 class="heading-2">4+ Stars</h2>
-                            <p>99% of Home Health Agencies Achieved 4 Stars
-                                or Higher in CMS Quality
+                            <h2 class="heading-2">Keep your current doctors</h2>
+                            <p>
+                                Landmark coordinates its care with your primary care provider, specialists and other
+                                community resources. Landmark provides added support to those who need it most.
                             </p>
                         </div>
                     </div>
@@ -395,12 +430,29 @@
                     <div class="feature-item d-flex">
                         <div class="media-icon">
                             <div class="animate-temp">
-                                <i class="fa-solid fa-ranking-star fa-2xl" style="color: #d91239;"></i>
+                                <i class="fa-solid fa-ranking-star fa-2xl"></i>
+                            </div>
+                        </div>
+                        <div class="media-body">
+                            <h2 class="heading-2">Available 24 / 7</h2>
+                            <p>
+                                Our provider-staffed call center answers any time of the day or night. We also provide
+                                urgent visits to help you avoid unnecessary trips to the emergency room.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="feature-item d-flex">
+                        <div class="media-icon">
+                            <div class="animate-temp">
+                                <i class="fa-solid fa-ranking-star fa-2xl"></i>
                             </div>
                         </div>
                         <div class="media-body">
                             <h2 class="heading-2">4+ Stars</h2>
-                            <p>99% of Home Health Agencies Achieved 4 Stars
+                            <p>
+                                99% of Home Health Agencies Achieved 4 Stars
                                 or Higher in CMS Quality
                             </p>
                         </div>
@@ -410,28 +462,14 @@
                     <div class="feature-item d-flex">
                         <div class="media-icon">
                             <div class="animate-temp">
-                                <i class="fa-solid fa-ranking-star fa-2xl" style="color: #d91239;"></i>
+                                <i class="fa-solid fa-ranking-star fa-2xl"></i>
                             </div>
                         </div>
                         <div class="media-body">
-                            <h2 class="heading-2">4+ Stars</h2>
-                            <p>99% of Home Health Agencies Achieved 4 Stars
-                                or Higher in CMS Quality
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                    <div class="feature-item d-flex">
-                        <div class="media-icon">
-                            <div class="animate-temp">
-                                <i class="fa-solid fa-ranking-star fa-2xl" style="color: #d91239;"></i>
-                            </div>
-                        </div>
-                        <div class="media-body">
-                            <h2 class="heading-2">4+ Stars</h2>
-                            <p>99% of Home Health Agencies Achieved 4 Stars
-                                or Higher in CMS Quality
+                            <h2 class="heading-2">Reduced stress</h2>
+                            <p>
+                                Patients and caregivers enjoy peace of mind with Landmark support. Landmark cares for
+                                the whole patient.
                             </p>
                         </div>
                     </div>
@@ -439,6 +477,8 @@
             </div>
         </div>
     </div>
+
+
 
 
 
@@ -473,14 +513,12 @@
 
 
 
-
-
     <!-- Bullet Point -->
-    <div class="s-bullet">
+    <div class="s-bullet margin-large-y">
         <div class="container-fluid mt-5 mb-2">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 text-center">
-                    <h1 class="heading-1">
+                    <h1 class="heading-1 wow zoomInDown">
                         We've helped
                         <span class="text-red grad-an">over 3 million borrowes</span>
                         <br>navigate the commercial lending process
@@ -492,13 +530,12 @@
                     <a href="#" class="btn btn-primary my-2 px-4">Our Services</a>
                 </div>
             </div>
-
             <div class="row content-container">
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <div class="container-fluid">
-                        <div class="bullet-item">
-                            <h2 class="heading-2">
-                                Redefines the phrase “out of the box”!
+                        <div class="bullet-item wow slideInLeft">
+                            <h2 class="heading-2 text-center">
+                                Redefines the phrase “out of the box”
                             </h2>
                             <p>
                                 “In the commercial real estate context, [they] bring expertise to the table well beyond
@@ -510,11 +547,10 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <div class="container-fluid">
-                        <div class="bullet-item">
-                            <h2 class="heading-2">
+                        <div class="bullet-item wow slideInUp">
+                            <h2 class="heading-2 text-center">
                                 Finding the best loan product
                             </h2>
                             <p>
@@ -525,11 +561,10 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <div class="container-fluid">
-                        <div class="bullet-item">
-                            <h2 class="heading-2">
+                        <div class="bullet-item wow slideInRight">
+                            <h2 class="heading-2 text-center">
                                 Outstanding customer service
                             </h2>
                             <p>
@@ -541,7 +576,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 
@@ -549,20 +583,29 @@
 
 
     <!-- Matrix Number -->
-    <div class="s-matrix">
+    <div class="s-matrix margin-large-y">
         <div class="container">
             <div class="row">
                 <div class="col-lg-7 col-md-8">
-                    <h2>
-                        We are the future of health care.
-                    </h2>
+                    <!-- <h2>
+                        We are the future of health care
+                    </h2> -->
+
+                    <div class="container typed-text">
+                        <p>We are the future of </p>
+                        <span id="typed-strings" style="display: none;">
+                            <span>Health Care</span>
+                        </span>
+                        <span id="typed"></span>
+                    </div>
+
+
                     <p>
                         Landmark is one of the nation's largest healthcare companies focused on in-home care of complex,
                         chronic patients. Our physician-led provider groups support collaborative ties between
                         community-based organizations, primary care providers, specialists and patients and their
                         families.
                     </p>
-
                     <div class="container d-flex">
                         <div class="matrix-item text-center">
                             <span class="counter-number" data-toggle="counter-up">5,487</span>
@@ -578,13 +621,10 @@
                             <span>%</span>
                             <p>Cups of Coffee Drank</p>
                         </div>
-
                     </div>
-
                 </div>
-
                 <div class="col-lg-5 col-md-4">
-                    <div class="img-place">
+                    <div class="img-place wow zoomInRight">
                         <img src="assets/imgs/matrix-s01.jpeg" class="img-fluid">
                     </div>
                 </div>
@@ -598,11 +638,11 @@
 
 
     <!-- Testimonial Start -->
-    <section id="s_testimonial">
+    <section class="s-testimonial">
         <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
             <div class="container">
                 <div class="section-title text-center">
-                    <h1 class="display-5 mb-5">Testimonial</h1>
+                    <h1 class="display-5 mb-5">Our Clients</h1>
                 </div>
                 <div class="owl-carousel testimonial-carousel">
                     <div class="testimonial-item text-center">
@@ -655,19 +695,25 @@
 
 
 
-
-
-
-
     <!-- Frequent Question -->
-    <div class="s-question">
+    <div class="s-question margin-large-y wow jackInTheBox">
         <div class="bg-banner">
             <div class="container container-text">
                 <div class="row justify-content-center">
                     <div class="col-10 text-center">
-                        <h2 class="heading-2">
-                            Have questions about Landmark? We'd love to hear from you.
-                        </h2>
+                        <!-- <h2 class="heading-2">
+                            Have questions about 24/7 Care At Home? We'd love to hear from you.
+                        </h2> -->
+
+                        <div class="container typed-text">
+                            <span id="typed-strings" style="display: none;">
+                                <span>Have questions about 24/7 Care At Home?</span>
+                                <br>
+                            </span>
+                            <span id="typed"></span>
+                            <p>We'd love to hear from you!</p>
+                        </div>
+
                         <div class="btn-row">
                             <a href="#" class="btn btn-custom">Contact Us</a>
                         </div>
@@ -679,7 +725,7 @@
 
 
     <!-- Footer -->
-    <div class="s-footer m-4">
+    <div class="s-footer margin-large-y">
         <div class="row">
             <div class="col-lg-8 col-md-8 col-sm-8">
                 <div class="container-fluid">
@@ -707,16 +753,14 @@
                     </div>
                 </div>
             </div>
-
             <div class="col-lg-4 col-md-4 col-sm-4">
                 <div class="container mt-3">
-                    <div class="d-flex justify-content-center align-items-center">
-                        <img src="assets/imgs/logo-dark.png" alt="">
+                    <div class="d-flex justify-content-center align-items-center img-place wow flip">
+                        <img src="assets/imgs/247CAH-logo-03.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
-
         <div class="row mx-4 my-4">
             <div class="container">
                 <div class="d-flex flex-row justify-content-between">
@@ -735,7 +779,6 @@
                 </div>
             </div>
         </div>
-
         <div class="row">
             <div class="container-fluid">
                 <p class="paragraph">
@@ -748,10 +791,6 @@
             </div>
         </div>
     </div>
-
-
-
-
 
 
 
@@ -802,6 +841,9 @@
     <script src="https://cdn.jsdelivr.net/npm/waypoints@4.0.1/lib/jquery.waypoints.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery.counterup@2.1.0/jquery.counterup.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+
 
     <!-- Custom JavaScript -->
     <script type="text/javascript" src="assets/js/script.js"></script>

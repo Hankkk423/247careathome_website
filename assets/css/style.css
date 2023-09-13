@@ -5,7 +5,7 @@
     --primary-bg-dark: #ed1c2440;
     /* --light: #F5F5F5;
     --dark: #353535; */
-    --page-padding-x: 100px;
+    --page-padding-x: 150px;
 }
 
 /* For mobile */
@@ -631,6 +631,7 @@ a {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border: 10px solid #ccc;
     border-radius: 10%;
 }
 
@@ -658,6 +659,124 @@ a {
 }
 
 /* End Custom bootstrap */
+
+
+
+
+
+
+
+/*** Bullet Point ***/
+.s-bullet {
+    margin-top: 70px;
+    margin-bottom: 60px;
+
+}
+
+.s-bullet .heading-1 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    line-height: 1.1;
+}
+
+.s-bullet .text-red {
+    color: #f04f1e;
+    position: relative;
+}
+
+.s-bullet .grad-an {
+    display: inline-block;
+    background-image: linear-gradient(-45deg, #f04f1e, #f04f1e, #191919, #191919, #f04f1e, #f04f1e) !important;
+    background-size: 400% !important;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: Gradient 5s ease infinite !important;
+    -moz-animation: Gradient 5s ease infinite !important;
+    animation: Gradient 5s ease infinite !important;
+}
+
+/* Custon bootstrap */
+.s-bullet .btn-primary {
+    color: #191919;
+    background-color: #fff;
+    border-color: var(--primary);
+    padding: 10px 23px 12px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* Custon bootstrap */
+
+.s-bullet .content-container {
+    margin-top: 80px;
+}
+
+.s-bullet .bullet-item {
+    display: flex;
+    flex-direction: column;
+    /* padding-left: 30px;
+    padding-right: 30px; */
+    padding: 0 5px;
+    margin: 0 5px;
+}
+
+.s-bullet .bullet-item .heading-2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding: 3px 0;
+    /* background-color: var(--primary-bg); */
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+/*** Fun Fact ***/
+.s-funfact {
+    position: relative;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: url(../imgs/bg_banner_s02.png);
+}
+
+.s-funfact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(41, 36, 36, 0.7);
+}
+
+/* Custom bootstrap */
+.s-funfact .container {
+    position: relative;
+    z-index: 2;
+}
+/* End Custom bootstrap */
+
+
+
+
+
 
 
 
@@ -727,116 +846,6 @@ a {
 
 
 
-/*** Fun Fact ***/
-.s-funfact {
-    position: relative;
-    display: block;
-    width: 100%;
-    overflow: hidden;
-    padding: 100px 0;
-    text-align: center;
-    color: #fff;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-image: url(../imgs/bg_banner_s02.png);
-}
-
-.s-funfact::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(41, 36, 36, 0.7);
-}
-
-/* Custom bootstrap */
-.s-funfact .container {
-    position: relative;
-    z-index: 2;
-}
-/* End Custom bootstrap */
-
-
-
-
-
-
-
-/*** Bullet Point ***/
-.s-bullet {
-    margin-top: 70px;
-    margin-bottom: 20px;
-
-}
-
-.s-bullet .heading-1 {
-    font-size: 50px;
-    font-weight: 600;
-    margin-bottom: 40px;
-    line-height: 1.1;
-}
-
-.s-bullet .text-red {
-    color: #f04f1e;
-    position: relative;
-}
-
-.s-bullet .grad-an {
-    display: inline-block;
-    background-image: linear-gradient(-45deg, #f04f1e, #f04f1e, #191919, #191919, #f04f1e, #f04f1e) !important;
-    background-size: 400% !important;
-    background-clip: text;
-    -webkit-background-clip: text;
-    text-fill-color: transparent;
-    -webkit-text-fill-color: transparent;
-    -webkit-animation: Gradient 5s ease infinite !important;
-    -moz-animation: Gradient 5s ease infinite !important;
-    animation: Gradient 5s ease infinite !important;
-}
-
-/* Custon bootstrap */
-.s-bullet .btn-primary {
-    color: #191919;
-    background-color: #fff;
-    border-color: var(--primary);
-    padding: 10px 23px 12px;
-    font-size: 15px;
-    font-weight: 600;
-}
-
-/* Custon bootstrap */
-
-.s-bullet .content-container {
-    margin-top: 80px;
-}
-
-.s-bullet .bullet-item {
-    display: flex;
-    flex-direction: column;
-    /* padding-left: 30px;
-    padding-right: 30px; */
-    padding: 0 5px;
-    margin: 0 5px;
-}
-
-.s-bullet .bullet-item .heading-2 {
-    font-size: 30px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    padding: 3px 0;
-    background-color: var(--primary-bg);
-    border-radius: 10px;
-}
-
-
-
-
-
-
 
 
 /*** Matrix Number ***/
@@ -881,7 +890,7 @@ a {
 .s-matrix .img-place img {
     width: 100%;
     height: auto;
-    border: 2px solid #ccc;
+    border: 10px solid #ccc;
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
@@ -898,7 +907,7 @@ a {
 .s-testimonial .section-title h1 {
     border-right: 1px solid var(--primary);
     border-left: 1px solid var(--primary);
-    margin: 0 300px;
+    /* margin: 0 300px; */
 }
 
 .testimonial-carousel::before {

@@ -5,7 +5,7 @@
     --primary-bg-dark: #ed1c2440;
     /* --light: #F5F5F5;
     --dark: #353535; */
-    --page-padding-x: 150px;
+    --page-padding-x: 100px;
 }
 
 /* For mobile */
@@ -62,13 +62,21 @@ a {
 
 
 
+/*** Custom chat-style.css ***/
+.chat-button-container {
+    width: 60px;
+    height: 60px;
+}
+/*** End Custom chat-style.css ***/
+
+
 
 /*** Header ***/
 .navbar-fixed-top {
     position: fixed;
     right: 0;
     left: 0;
-    z-index: 1030;
+    z-index: 888;
     background-color: #84848460;
 }
 
@@ -107,10 +115,10 @@ a {
 
 .s-header__logo {
     position: relative;
-    z-index: 9999;
     width: 100%;
     height: auto;
     float: left;
+    z-index: 9999;
 }
 
 .s-header__logo-link {
@@ -134,7 +142,6 @@ a {
 
 .s-header__trigger {
     position: relative;
-    z-index: 9999;
     width: 3.125rem;
     height: 3.125rem;
     float: right;
@@ -142,6 +149,7 @@ a {
     transition-duration: 500ms;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+    z-index: 9999;
 }
 
 .s-header__trigger-icon {
@@ -222,7 +230,6 @@ a {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 999;
     width: 100%;
     height: 100%;
     background: rgba(34, 35, 36, 0);
@@ -230,6 +237,7 @@ a {
     transition: all 1s ease-in 0.4s;
     overflow-y: auto;
     /* Add this to enable vertical scrolling */
+    z-index: 999;
 }
 
 .s-header-bg-overlay.-is-open {
@@ -434,7 +442,7 @@ a {
 
 .s-header-bg-overlay .s-header__action--rb {
     position: fixed;
-    right: 1.875rem;
+    right: 6.875rem;
     bottom: 1.875rem;
     margin-bottom: 0;
 }
@@ -530,18 +538,19 @@ a {
 
 
 /*** Slide ***/
+.s-slide .carousel-inner {
+    border-radius: 20px;
+}
+
 .s-slide .carousel-item {
     height: 500px;
     overflow: hidden;
 }
 
 .s-slide .carousel-item img {
-    height: 100%;
-    /* Ensure the image fills the container's height */
-    width: 100%;
-    /* Ensure the image fills the container's width */
-    object-fit: cover;
-    /* Crop the image to cover the container while maintaining aspect ratio */
+    height: 100%;  /* Ensure the image fills the container's height */
+    width: 100%;  /* Ensure the image fills the container's width */
+    object-fit: cover;  /* Crop the image to cover the container while maintaining aspect ratio */
 }
 
 
@@ -695,8 +704,8 @@ a {
     padding-right: 1.25rem;
 }
 
-.s-feature .media-body .heading-2 {
-    font-size: 30px;
+.s-feature .media-body .heading-3 {
+    font-size: 25px;
     font-weight: 700;
     color: var(--primary);
 }
@@ -731,7 +740,7 @@ a {
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-image: url(../imgs/bg_banner_01.jpg);
+    background-image: url(../imgs/bg_banner_s02.png);
 }
 
 .s-funfact::before {

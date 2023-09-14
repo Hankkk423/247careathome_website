@@ -641,7 +641,7 @@ p {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    border: 10px solid #ccc;
+    /* border: 10px solid #ccc; */
     border-radius: 10%;
 }
 
@@ -895,7 +895,7 @@ p {
 .s-matrix .img-place img {
     width: 100%;
     height: auto;
-    border: 10px solid #ccc;
+    /* border: 10px solid #ccc; */
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }

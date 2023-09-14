@@ -1,8 +1,7 @@
 /*** Basic ***/
 :root {
     --primary: #ed1c24;
-    --primary-bg: #ed1c2420;
-    --primary-bg-dark: #ed1c2440;
+    --primary-bg: #ed1c2440;
     /* --light: #F5F5F5;
     --dark: #353535; */
     --page-padding-x: 150px;
@@ -21,13 +20,21 @@
 /* Custom bootstrap */
 body {
     font-family: Garamond, sans-serif;
-    font-size: 1rem;
+    font-size: 1.5rem;
     /* font-weight: 400; */
     line-height: 1.5;
     color: #222324;
     background-color: #fff;
     padding: 0 var(--page-padding-x);
 }
+
+/* For mobile */
+@media (max-width: 47.9em) {
+    body {
+        font-size: 1.0rem;
+    }
+}
+/* End For mobile */
 
 h1,
 .h1,
@@ -543,6 +550,44 @@ p {
     border-radius: 20px;
 }
 
+.s-hero .btn-custom:hover {
+    color: #fff;
+    background-color: rgb(18, 28, 45);
+    border-color: rgb(18, 28, 45);
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+/*** Bootstrap Modal For Contact Box ***/
+.modal .btn-custom {
+    color: #fff;
+    font-weight: 700;
+    padding: 7px 16px;
+    background-color: var(--primary);
+    border-color: var(--primary);
+    border-radius: 20px;
+}
+
+.modal .btn-custom:hover {
+    color: #fff;
+    background-color: rgb(18, 28, 45);
+    border-color: rgb(18, 28, 45);
+    transition: all 0.3s ease-in-out;
+}
+/*** End Bootstrap Modal For Contact Box ***/
+
+
+
+
+
+
 
 
 
@@ -558,10 +603,36 @@ p {
 }
 
 .s-slide .carousel-item img {
-    height: 100%;  /* Ensure the image fills the container's height */
+    max-height: 160%;
+    height: auto;  /* Ensure the image fills the container's height */
     width: 100%;  /* Ensure the image fills the container's width */
     object-fit: cover;  /* Crop the image to cover the container while maintaining aspect ratio */
 }
+
+.s-slide .carousel-inner .carousel-caption {
+    /* text-shadow: 5px 4px 4px rgba(0, 0, 0, 0.5); */
+}
+
+.s-slide .carousel-inner .carousel-caption.grad-an {
+    display: inline-block;
+    background-image: linear-gradient(-45deg, #f04f1e, #f04f1e, #fff, #fff, #f04f1e, #f04f1e) !important;
+    background-size: 400% !important;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: Gradient 5s ease infinite !important;
+    -moz-animation: Gradient 5s ease infinite !important;
+    animation: Gradient 5s ease infinite !important;
+}
+
+.s-slide .carousel-inner .carousel-caption h1 {
+    font-weight: 900;
+    font-size: 60px;
+}
+
+
+
 
 
 
@@ -620,7 +691,7 @@ p {
 .s-brand .brand-logo {
     width: 150px;
     height: 50px;
-    margin: 0 40px;
+    margin: 0 30px;
     /* Adjust the spacing between logos */
 }
 
@@ -738,7 +809,6 @@ p {
     font-weight: 600;
     margin-bottom: 20px;
     padding: 3px 0;
-    /* background-color: var(--primary-bg); */
     border-radius: 10px;
 }
 
@@ -757,11 +827,11 @@ p {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background-position: center center;
+    background-position: center top;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-image: url(../imgs/bg_banner_s02.png);
+    background-image: url(../imgs/bg_banner_s03.jpg);
 }
 
 .s-funfact::before {
@@ -885,7 +955,7 @@ p {
 }
 
 .s-matrix .img-place {
-    width: 350px;
+    width: 450px;
     height: 380px;
     overflow: hidden;
 
@@ -1009,7 +1079,7 @@ p {
 .s-question .bg-banner {
     padding-bottom: 100px;
     padding-top: 100px;
-    background-color: var(--primary-bg-dark);
+    background-color: var(--primary-bg);
     /* border-radius: 20px 20px 20px 20px; */
     border-radius: 40px;
 }

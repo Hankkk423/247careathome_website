@@ -2,8 +2,6 @@
 :root {
     --primary: #ed1c24;
     --primary-bg: #ed1c2440;
-    /* --light: #F5F5F5;
-    --dark: #353535; */
     --page-padding-x: 150px;
 }
 
@@ -17,11 +15,10 @@
 /* End For mobile */
 
 @import url('https://fonts.googleapis.com/css?family=Proxima+Nova');
-
 /* Custom bootstrap */
 body {
     /* font-family: Garamond, sans-serif; */
-    /* font-family: "Times New Roman", Times, serif; */
+    /* font-family: "Times New Roman", Times, sans-serif; */
     font-family: 'Proxima Nova', sans-serif;
     font-size: 1.15rem;
     /* font-weight: 400; */
@@ -53,10 +50,8 @@ h6,
 .h6 {
     margin-top: 0;
     margin-bottom: .5rem;
-    /* font-family: "Roboto", sans-serif; */
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.2;
-    /* color: #353535 */
 }
 
 a {
@@ -67,12 +62,13 @@ a {
 p {
     font-weight: 600;
 }
+/* End Custom bootstrap */
 
 .margin-large-y {
     margin: 80px 0;
 }
 
-/* End Custom bootstrap */
+
 
 
 
@@ -82,7 +78,6 @@ p {
     height: 60px;
 }
 /*** End Custom chat-style.css ***/
-
 
 
 
@@ -143,16 +138,12 @@ p {
     padding: 1rem 0;
     /* width: 105px;
     height: 28px; */
-
 }
 
 .s-header__logo-img {
     position: relative;
     display: block;
     opacity: 1;
-    /* position: absolute;
-    top: 1rem;
-    left: 0; */
     width: 105px;
     height: auto;
 }
@@ -488,7 +479,7 @@ p {
 /* End Custom bootstrap */
 
 .s-hero .hero-text {
-    font-size: 80px;
+    font-size: 70px;
     font-weight: 600;
     line-height: 1;
     margin-bottom: 25px;
@@ -564,10 +555,6 @@ p {
 
 
 
-
-
-
-
 /*** Bootstrap Modal For Contact Box ***/
 .modal .btn-custom {
     color: #fff;
@@ -590,11 +577,6 @@ p {
 
 
 
-
-
-
-
-
 /*** Slide ***/
 .s-slide .carousel-inner {
     border-radius: 20px;
@@ -612,10 +594,6 @@ p {
     object-fit: cover;  /* Crop the image to cover the container while maintaining aspect ratio */
 }
 
-.s-slide .carousel-inner .carousel-caption {
-    /* text-shadow: 5px 4px 4px rgba(0, 0, 0, 0.5); */
-}
-
 .s-slide .carousel-inner .carousel-caption.grad-an {
     display: inline-block;
     background-image: linear-gradient(-45deg, #f04f1e, #f04f1e, #fff, #fff, #f04f1e, #f04f1e) !important;
@@ -626,16 +604,13 @@ p {
     -webkit-text-fill-color: transparent;
     -webkit-animation: Gradient 5s ease infinite !important;
     -moz-animation: Gradient 5s ease infinite !important;
-    animation: Gradient 5s ease infinite !important;
+    animation: Gradient 5s ease infinite !important;  /* This keyframes is defined above */
 }
 
 .s-slide .carousel-inner .carousel-caption h1 {
-    font-weight: 900;
-    font-size: 60px;
+    /* font-weight: 900; */
+    font-size: 50px;
 }
-
-
-
 
 
 
@@ -702,7 +677,6 @@ p {
 
 
 
-
 /*** Eligible ***/
 .s-eligible .img-place {
     height: 380px;
@@ -748,8 +722,6 @@ p {
 
 
 
-
-
 /*** Bullet Point ***/
 .s-bullet {
     margin-top: 70px;
@@ -779,7 +751,7 @@ p {
     -webkit-text-fill-color: transparent;
     -webkit-animation: Gradient 5s ease infinite !important;
     -moz-animation: Gradient 5s ease infinite !important;
-    animation: Gradient 5s ease infinite !important;
+    animation: Gradient 5s ease infinite !important;  /* This keyframes is defined above */
 }
 
 /* Custon bootstrap */
@@ -792,6 +764,12 @@ p {
     font-weight: 600;
 }
 
+.s-bullet .btn-primary:hover {
+    color: #191919;
+    background-color: var(--primary-bg);
+    /* border-color: var(--primary); */
+    transition: 0.2s ease-in-out;
+}
 /* Custon bootstrap */
 
 .s-bullet .content-container {
@@ -819,8 +797,6 @@ p {
 
 
 
-
-
 /*** Fun Fact ***/
 .s-funfact {
     position: relative;
@@ -834,7 +810,7 @@ p {
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-image: url(../imgs/bg_banner_s03.jpg);
+    background-image: url(../imgs/bg_banner_s02.jpg);
 }
 
 .s-funfact::before {
@@ -853,8 +829,6 @@ p {
     z-index: 2;
 }
 /* End Custom bootstrap */
-
-
 
 
 
@@ -924,8 +898,6 @@ p {
 
 
 
-
-
 /*** Matrix Number ***/
 .s-matrix .typed-text {
     font-size: 40px;
@@ -974,8 +946,6 @@ p {
 }
 
 /* End Custom bootstrap */
-
-
 
 
 
@@ -1069,8 +1039,7 @@ p {
 
 
 
-
-/*** Frequent Question ***/
+/*** Question ***/
 .s-question {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -1122,9 +1091,6 @@ p {
 
 
 
-
-
-
 /*** Footer ***/
 .s-footer .btn-social {
     margin-right: 5px;
@@ -1148,7 +1114,7 @@ p {
     margin-right: 40px;
     color: #191919;
     font-size: 16px;
-    font-weight: 800;
+    font-weight: 700;
     transition: opacity .2s;
 }
 
@@ -1170,3 +1136,12 @@ p {
     margin-top: 10px;
     font-size: 14px;
 }
+
+
+
+
+
+
+
+
+/********** Sub - faq.html **********/

@@ -1145,6 +1145,7 @@ p {
 
 
 /********** Sub - faq.html **********/
+/*** Frequent Ask Question ***/
 .s-allquestion .card-accordion {
     padding-left: 15%;
     padding-right: 15%;
@@ -1159,6 +1160,8 @@ p {
 .s-allquestion .card-header {
     background: transparent;
     border: none;
+    margin-bottom: 4px;
+    padding: 0;
 }
 
 /* Custom bootstrap */
@@ -1175,14 +1178,19 @@ p {
     text-align: left;
     width: 100%;
 }
+
+.s-allquestion .card-header .btn:focus {
+    box-shadow: none;
+    outline: 3px solid #4c9e56;
+}
 /* End Custom bootstrap */
 
-.s-allquestion .card-header .has-icon {
+.s-allquestion .card-header .btn.has-icon {
     padding-left: 75px;
     padding-right: 30px;
 }
 
-.s-allquestion .card-header .has-icon:before {
+.s-allquestion .card-header .btn.has-icon:before {
     background: 50%/contain no-repeat;
     content: "";
     display: inline-block;
@@ -1206,7 +1214,7 @@ p {
     position: absolute;
     right: 0;
     top: 50%;
-    transform: translateY(-50%);
+    /* transform: translateY(-50%); */
     transition: .3s;
     width: 0;
 }

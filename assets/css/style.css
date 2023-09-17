@@ -60,7 +60,7 @@ a {
 }
 
 p {
-    font-weight: 600;
+    font-weight: 400;
 }
 /* End Custom bootstrap */
 
@@ -1144,6 +1144,98 @@ p {
 
 
 
+
+
+/********** Sub - about.html **********/
+/*** Grid Box ***/
+.s-gridbox .gridbox-container {
+    /* display: grid;
+    grid-column-gap: 100px;
+    grid-row-gap: 44px;
+    grid-template:
+        "Area Area-2 Area-3"
+        "Area Area-4 Area-5" / 1fr 1fr 1.36364fr;
+    grid-auto-columns: 1fr; */
+
+    display: grid;
+    grid-template-areas:
+        "Area Area-2 Area-3"
+        "Area Area-4 Area-5";
+    grid-template-columns: 1fr 1fr 1.36364fr;
+    grid-column-gap: 100px;
+    grid-row-gap: 44px;
+}
+
+.s-gridbox .grid-item-area {
+    grid-area: Area;
+    /* max-width: 264px; */
+}
+
+.s-gridbox .grid-item-area .area-head {
+    margin-top: 14px;
+    margin-bottom: 70px;
+}
+
+.s-gridbox .grid-item-area .area-img {
+    background-image: url(../imgs/grid-s01.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    padding-top: 138%;
+    padding-bottom: 0;
+    width: 200px;
+    height: auto;
+}
+
+.s-gridbox .grid-item-area-2 {
+    grid-area: Area-2;
+}
+
+.s-gridbox .gridbox-container .head-1 {
+    color: #ed1c24;
+}
+
+.s-gridbox .gridbox-container .head-2 {
+    font-size: 20px;
+}
+
+.s-gridbox .gridbox-container .head-3 {
+    font-size: 12px;
+}
+
+.s-gridbox .grid-item-area-3 {
+    grid-area: Area-3;
+}
+
+.s-gridbox .grid-item-area-4 {
+    grid-area: Area-4;
+}
+
+.s-gridbox .grid-item-area-5 {
+    grid-area: Area-5;
+}
+
+.s-gridbox .grid-item-area-5 .area-5-img {
+    background-image: url(../imgs/grid-s02.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    padding-top: 73%;
+    padding-bottom: 0;
+    width: 300px;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
 /********** Sub - faq.html **********/
 /*** Frequent Ask Question ***/
 .s-allquestion .card-accordion {
@@ -1201,7 +1293,7 @@ p {
     transform: translateY(-50%);
     vertical-align: middle;
     width: 55px;
-    background-image: url(../imgs/icon-phone-care.svg);
+    background-image: url(../imgs/icon-faq-s03.png);
 }
 
 .s-allquestion .card-header .btn:after {

@@ -1147,6 +1147,82 @@ p {
 
 
 /********** Sub - about.html **********/
+/*** Team Bar ***/
+.s-team .team-bar-wrapper {
+    width: 100%;
+    margin: 40px 0;
+    padding: 20px 0;
+    background: white;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+}
+
+/* .s-team .team-bar-wrapper:before,
+.s-team .team-bar-wrapper:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: " ";
+    z-index: 2;
+}
+
+.s-team .team-bar-wrapper:before {
+    left: 0;
+    background: linear-gradient(to left, rgb(255, 255, 255, 0), white);
+}
+
+.s-team .team-bar-wrapper:after {
+    right: 0;
+    background: linear-gradient(to right, rgb(255, 255, 255, 0), white);
+} */
+
+.s-team .team-bar-wrapper:hover .team-bar {
+    /* animation-play-state: paused; */
+}
+
+.s-team .team-bar {
+    /* display: inline-block;    */
+    display: flex;
+    animation: scroll 15s infinite linear;
+}
+
+.s-team .team-bar2 {
+    /* display: inline-block;    */
+    display: flex;
+    animation: scroll 20s infinite linear;
+}
+
+/* @keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+} */
+
+.s-team .member-card {
+    /* width: 150px;
+    height: 50px; */
+    margin: 0 30px;
+    /* Adjust the spacing between logos */
+}
+
+.s-team .member-image {
+    width: 150px;
+    height: auto;
+    /* Adjust the spacing between logos */
+}
+
+
+
+
+
+
 /*** Grid Box ***/
 .s-gridbox .gridbox-container {
     /* display: grid;

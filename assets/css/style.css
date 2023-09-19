@@ -627,89 +627,61 @@ p {
 
 
 
-
-/*** Testimonial ***/
-.s-testimonial .section-title h1 {
-    border-right: 1px solid var(--primary);
-    border-left: 1px solid var(--primary);
-    /* margin: 0 300px; */
-}
-
-.testimonial-carousel::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
-    z-index: 1;
-}
-
-.testimonial-carousel::after {
-    position: absolute;
-    content: "";
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 0;
-    background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
-    z-index: 1;
-}
-
-@media (min-width: 768px) {
-    .testimonial-carousel::before,
-    .testimonial-carousel::after {
-        width: 200px;
-    }
-}
-
-@media (min-width: 992px) {
-    .testimonial-carousel::before,
-    .testimonial-carousel::after {
-        width: 300px;
-    }
-}
-
-.testimonial-carousel .owl-item .testimonial-text {
-    border: 5px solid var(--light);
-    transform: scale(.8);
-    transition: .5s;
-}
-
-.testimonial-carousel .owl-item.center .testimonial-text {
-    transform: scale(1);
-}
-
-.testimonial-carousel .owl-nav {
-    position: absolute;
-    width: 350px;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: space-between;
-    opacity: 0;
-    transition: .5s;
-    z-index: 1;
-}
-
-.testimonial-carousel:hover .owl-nav {
-    width: 300px;
-    opacity: 1;
-}
-
-.testimonial-carousel .owl-nav .owl-prev,
-.testimonial-carousel .owl-nav .owl-next {
+/*** Brand Bar ***/
+.s-brand .brand-bar-wrapper {
+    width: 100%;
+    margin: 30px 0;
+    padding: 20px 0;
+    background: white;
+    white-space: nowrap;
+    overflow: hidden;
     position: relative;
-    color: var(--primary);
-    font-size: 45px;
-    transition: .5s;
 }
 
-.testimonial-carousel .owl-nav .owl-prev:hover,
-.testimonial-carousel .owl-nav .owl-next:hover {
-    color: #000000;
+.s-brand .brand-bar-wrapper:before,
+.s-brand .brand-bar-wrapper:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: " ";
+    z-index: 2;
+}
+
+.s-brand .brand-bar-wrapper:before {
+    left: 0;
+    background: linear-gradient(to left, rgb(255, 255, 255, 0), white);
+}
+
+.s-brand .brand-bar-wrapper:after {
+    right: 0;
+    background: linear-gradient(to right, rgb(255, 255, 255, 0), white);
+}
+
+.s-brand .brand-bar-wrapper:hover .brand-bar {
+    /* animation-play-state: paused; */
+}
+
+.s-brand .brand-bar {
+    display: inline-block;    
+    animation: scroll 15s infinite linear;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.s-brand .brand-logo {
+    width: 150px;
+    height: 50px;
+    margin: 0 30px;
+    /* Adjust the spacing between logos */
 }
 
 
@@ -928,6 +900,95 @@ p {
 
 
 
+
+/*** Testimonial ***/
+.s-testimonial .section-title h1 {
+    border-right: 1px solid var(--primary);
+    border-left: 1px solid var(--primary);
+    /* margin: 0 300px; */
+}
+
+.testimonial-carousel::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    z-index: 1;
+}
+
+.testimonial-carousel::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    z-index: 1;
+}
+
+@media (min-width: 768px) {
+    .testimonial-carousel::before,
+    .testimonial-carousel::after {
+        width: 200px;
+    }
+}
+
+@media (min-width: 992px) {
+    .testimonial-carousel::before,
+    .testimonial-carousel::after {
+        width: 300px;
+    }
+}
+
+.testimonial-carousel .owl-item .testimonial-text {
+    border: 5px solid var(--light);
+    transform: scale(.8);
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-text {
+    transform: scale(1);
+}
+
+.testimonial-carousel .owl-nav {
+    position: absolute;
+    width: 350px;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+    transition: .5s;
+    z-index: 1;
+}
+
+.testimonial-carousel:hover .owl-nav {
+    width: 300px;
+    opacity: 1;
+}
+
+.testimonial-carousel .owl-nav .owl-prev,
+.testimonial-carousel .owl-nav .owl-next {
+    position: relative;
+    color: var(--primary);
+    font-size: 45px;
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-nav .owl-prev:hover,
+.testimonial-carousel .owl-nav .owl-next:hover {
+    color: #000000;
+}
+
+
+
+
+
 /*** Matrix Number ***/
 .s-matrix .typed-text {
     font-size: 37px; /* h1(37px) */
@@ -979,66 +1040,6 @@ p {
 
 
 
-
-
-
-
-/*** Brand Bar ***/
-.s-brand .brand-bar-wrapper {
-    width: 100%;
-    margin: 40px 0;
-    padding: 20px 0;
-    background: white;
-    white-space: nowrap;
-    overflow: hidden;
-    position: relative;
-}
-
-.s-brand .brand-bar-wrapper:before,
-.s-brand .brand-bar-wrapper:after {
-    position: absolute;
-    top: 0;
-    width: 250px;
-    height: 100%;
-    content: " ";
-    z-index: 2;
-}
-
-.s-brand .brand-bar-wrapper:before {
-    left: 0;
-    background: linear-gradient(to left, rgb(255, 255, 255, 0), white);
-}
-
-.s-brand .brand-bar-wrapper:after {
-    right: 0;
-    background: linear-gradient(to right, rgb(255, 255, 255, 0), white);
-}
-
-.s-brand .brand-bar-wrapper:hover .brand-bar {
-    /* animation-play-state: paused; */
-}
-
-.s-brand .brand-bar {
-    display: inline-block;    
-    animation: scroll 15s infinite linear;
-}
-
-@keyframes scroll {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(-100%);
-    }
-}
-
-.s-brand .brand-logo {
-    width: 150px;
-    height: 50px;
-    margin: 0 30px;
-    /* Adjust the spacing between logos */
-}
 
 
 

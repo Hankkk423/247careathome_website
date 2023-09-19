@@ -1142,25 +1142,43 @@ p {
 
 
 
+/********** Sub - services.html **********/
+.s-description .img-place {
+    height: 500px;
+    width: 500px;
+    overflow: hidden;
+}
+
+.s-description .img-place img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.s-description .content-container .content-title {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.s-description .content-container .text-red {
+    color: var(--primary);
+}
+
+.s-description .content-container p {
+    /* line-height: 1.0; */
+}
 
 
 
-/********** Sub - about.html **********/
-/*** Our Background ***/
-/* Don't chang any style here. Change it in "s-eligible" in index.html */
-
+/*** Fun Fact ***/
+/* (Similar with s-funfact in index.html) */
+.subpage-services.s-funfact {
+    background-image: url(../imgs/bg_banner_s02.jpg);
+}
 
 
 /*** Grid Box ***/
 .s-gridbox .gridbox-container {
-    /* display: grid;
-    grid-column-gap: 100px;
-    grid-row-gap: 44px;
-    grid-template:
-        "Area Area-2 Area-3"
-        "Area Area-4 Area-5" / 1fr 1fr 1.36364fr;
-    grid-auto-columns: 1fr; */
-
     display: grid;
     grid-template-areas:
         "Area Area-2 Area-3"
@@ -1207,7 +1225,7 @@ p {
 }
 
 .s-gridbox .grid-item-area .area-head .text-red {
-    color: #f04f1e;
+    color: var(--primary);
     position: relative;
 }
 
@@ -1228,7 +1246,7 @@ p {
 }
 
 .s-gridbox .gridbox-container .head-1 {
-    color: #ed1c24;
+    color: var(--primary);
     font-size: 16px;
 }
 
@@ -1238,7 +1256,7 @@ p {
 }
 
 .s-gridbox .gridbox-container .head-3 {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .s-gridbox .grid-item-area-3 {
@@ -1268,6 +1286,29 @@ p {
 
 
 
+
+
+/*** Hightlight Quote ***/
+.s-highlight-quote .hightlight-content {
+    /* font-size: 48px;
+    font-weight: 600;
+    line-height: 1.3; */
+}
+
+.s-highlight-quote .hightlight-content .text-red{
+    color: var(--primary);
+}
+
+
+
+
+
+
+
+
+/********** Sub - about.html **********/
+/*** Our Background ***/
+/* Don't chang any style here. Change it in "s-eligible" in index.html */
 
 
 

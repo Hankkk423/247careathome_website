@@ -1143,6 +1143,7 @@ p {
 
 
 /********** Sub - services.html **********/
+/*** Description ***/
 .s-description .img-place {
     height: 500px;
     width: 500px;
@@ -1308,12 +1309,32 @@ p {
 
 /********** Sub - about.html **********/
 /*** Our Background ***/
-/* Don't chang any style here. Change it in "s-eligible" in index.html */
+/* Don't chang any style here. Change it in "s-description" in services.html */
 
+/*** Grid Box ***/
+/* Don't chang any style here. Change it in "s-gridbox" in services.html */
+.s-gridbox.subpage-about .grid-item-area .area-img {
+    background-image: url(../imgs/grid-s01.jpg);
+    /* background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: auto; */
+}
+
+.s-gridbox.subpage-about .grid-item-area-5 .area-5-img {
+    background-image: url(../imgs/grid-s02.jpg);
+    /* background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: auto; */
+}
 
 
 
 /*** Team Bar ***/
+/* (Similar with "brand-bar" in index.html) */
 .s-team .team-bar-wrapper {
     width: 100%;
     margin: 40px 0;
@@ -1374,7 +1395,7 @@ p {
 .s-team .member-card {
     /* width: 150px;
     height: 50px; */
-    margin: 0 30px;
+    margin: 0 70px;
     /* Adjust the spacing between logos */
 }
 
@@ -1391,11 +1412,10 @@ p {
 
 
 
-
-
-
-
 /********** Sub - faq.html **********/
+/*** Description ***/
+/* (Similar with "s-description" in services.html) */
+
 /*** Frequent Ask Question ***/
 .s-allquestion .card-accordion {
     padding-left: 15%;

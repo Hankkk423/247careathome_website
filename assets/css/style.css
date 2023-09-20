@@ -83,6 +83,14 @@ p {
     width: 60px;
     height: 60px;
 }
+
+.header-avatar-image {
+    /* background-image: url("../imgs/bot-image-s02.jpg"); */
+}
+
+.bot-avatar {
+    /* background-image: url("../imgs/bot-image-s02.jpg"); */
+}
 /*** End Custom chat-style.css ***/
 
 

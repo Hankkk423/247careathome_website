@@ -1500,3 +1500,169 @@ p {
 }
 /* End Custom bootstrap */
 
+
+
+
+
+
+
+
+/********** Sub - volunteers.html **********/
+/*** Volunteers Service Bar ***/
+/* (Similar with "brand-bar" in index.html) */
+.s-service-volunteers .service-bar-wrapper {
+    width: 100%;
+    margin: 30px 0;
+    padding: 20px 0;
+    background: white;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    /* border-top: 1px solid #0000005b; */
+    /* border-bottom: 1px solid #000000; */
+}
+
+.s-service-volunteers .service-bar-wrapper:before,
+.s-service-volunteers .service-bar-wrapper:after {
+    position: absolute;
+    top: 0;
+    width: 150px;
+    height: 100%;
+    content: " ";
+    z-index: 2;
+}
+
+.s-service-volunteers .service-bar-wrapper:before {
+    left: 0;
+    background: linear-gradient(to left, rgb(255, 255, 255, 0), white);
+}
+
+.s-service-volunteers .service-bar-wrapper:after {
+    right: 0;
+    background: linear-gradient(to right, rgb(255, 255, 255, 0), white);
+}
+
+.s-service-volunteers .service-bar-wrapper:hover .service-bar {
+    animation-play-state: paused;
+}
+
+.s-service-volunteers .service-bar {
+    display: flex;
+    /* display: inline-block; */
+    animation: scroll 20s infinite linear;
+}
+
+.s-service-volunteers .service-card {
+    display: flex;
+    margin: 0 30px;
+    /* Adjust the spacing between card */
+}
+
+.s-service-volunteers .img-place {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+.s-service-volunteers .img-place img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+.s-service-volunteers .card-content {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: auto;
+    white-space: wrap;
+}
+
+.s-service-volunteers .card-content p {
+    font-size: 18px;
+}
+
+
+
+/*** Bullet Point ***/
+/* (Similar with "Bullet Point" in index.html) */
+.s-bullet.subpage-volunteers .heading-1{
+    margin-bottom: 10px; /* Originally 40px */
+}
+
+
+
+/*** Description Left ***/
+/* (Similar with "Description Left" in services.html) */
+
+
+
+
+/*** Testimonial-Volunteers ***/
+.s-testi-volunteers .testi-card {
+    /* padding: 0 150px; */
+    width: 80%;
+}
+
+.s-testi-volunteers .img-place {
+    height: 350px;
+    width: 350px;
+    overflow: hidden;
+}
+
+/* For mobile */
+@media (max-width: 47.9em) {
+    .s-testi-volunteers .testi-card {
+        /* padding: 0 10px; */
+        width: 100%;
+    }
+
+    .s-testi-volunteers .img-place {
+        height: auto;
+        width: 300px;
+        overflow: hidden;
+    }
+
+    .s-testi-volunteers p {
+        font-size: 0.8rem;
+    }
+}
+/* End For mobile */
+
+.s-testi-volunteers .img-place img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+.s-testi-volunteers .carousel-control-prev,
+.s-testi-volunteers .carousel-control-next {
+    width: 45px;
+    height: 45px;
+    background: #fff;
+    opacity: 1;
+    font-size: 20px;
+    color: #000;
+    border-radius: 100%;
+    margin: 0 auto;
+    box-shadow: 0 0 5px 0;
+}
+
+.s-testi-volunteers .carousel-control-prev {
+    position: absolute;
+    left: -75px;
+    right: 0;
+    top: 100%;
+}
+
+.s-testi-volunteers .carousel-control-next {
+    position: absolute;
+    left: 0;
+    right: -75px;
+    top: 100%;
+    background: #7d56c9;
+    color: #fff;
+}

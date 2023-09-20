@@ -2,7 +2,7 @@
 :root {
     --primary: #ed1c24;
     --primary-bg: #ed1c2440;
-    --page-padding-x: 100px;
+    --page-padding-x: 120px;
 }
 
 /* For mobile */
@@ -234,7 +234,7 @@ p {
 
 .s-header__navbar .tag-line {
     background-color: var(--primary);
-    height: 30px;
+    height: 22px;
     color: #fff;
     /* font-size: 16px;
     font-weight: 600; */
@@ -1663,6 +1663,6 @@ p {
     left: 0;
     right: -75px;
     top: 100%;
-    background: #7d56c9;
+    background: #2485ba;
     color: #fff;
 }

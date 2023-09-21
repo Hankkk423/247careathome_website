@@ -687,7 +687,7 @@ p {
 
 .s-brand .brand-logo {
     width: 150px;
-    height: 50px;
+    height: auto;
     margin: 0 30px;
     /* Adjust the spacing between logos */
 }
@@ -1182,7 +1182,7 @@ p {
 /*** Fun Fact ***/
 /* (Similar with s-funfact in index.html) */
 .subpage-services.s-funfact {
-    background-image: url(../imgs/bg_banner_s02.jpg);
+    background-image: url(../imgs/page-services/bg_banner_s02.jpg);
 }
 
 
@@ -1239,7 +1239,7 @@ p {
 }
 
 .s-gridbox .grid-item-area .area-img {
-    background-image: url(../imgs/grid-s01.jpg);
+    background-image: url(../imgs/page-services/grid-s01.jpg);
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1281,7 +1281,7 @@ p {
 }
 
 .s-gridbox .grid-item-area-5 .area-5-img {
-    background-image: url(../imgs/grid-s02.jpg);
+    background-image: url(../imgs/page-services/grid-s02.jpg);
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1322,7 +1322,7 @@ p {
 /*** Grid Box ***/
 /* Don't chang any style here. Change it in "s-gridbox" in services.html */
 .s-gridbox.subpage-about .grid-item-area .area-img {
-    background-image: url(../imgs/grid-s01.jpg);
+    background-image: url(../imgs/page-about/grid-s01.jpg);
     /* background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1331,7 +1331,7 @@ p {
 }
 
 .s-gridbox.subpage-about .grid-item-area-5 .area-5-img {
-    background-image: url(../imgs/grid-s02.jpg);
+    background-image: url(../imgs/page-about/grid-s02.jpg);
     /* background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1480,7 +1480,7 @@ p {
     transform: translateY(-50%);
     vertical-align: middle;
     width: 55px;
-    background-image: url(../imgs/icon-faq-s03.png);
+    background-image: url(../imgs/page-faq/icon-faq-s03.png);
 }
 
 .s-allquestion .card-header .btn:after {

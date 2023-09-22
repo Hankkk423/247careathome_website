@@ -1233,6 +1233,20 @@ p {
     transition: .3s;
 }
 
+.s-footer .logo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+/* For Mobile */
+@media (max-width: 47.9em) {
+    .s-footer .logo-container {
+        justify-content: flex-start;
+    }
+}
+/* End For Mobile */
+
 .s-footer .img-place {
     width: 205px;
     height: auto;
@@ -1271,12 +1285,6 @@ p {
     margin-top: 10px;
     font-size: 14px;
 }
-
-/* For Mobile */
-@media (max-width: 47.9em) {
-
-}
-/* End For Mobile */
 
 
 

@@ -20,7 +20,7 @@ Link: https://hankkk423.github.io/247careathome_website/
 
 ### s-bullet (Bullet Point)
 - **Original:** index.html
-- **Reused:** services.html, about.html, volunteers.html
+- **Reused:** volunteers.html
 
 ### s-gridbox (Grid Box)
 - **Original:** services.html

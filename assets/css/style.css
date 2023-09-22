@@ -17,6 +17,7 @@
 /* End For mobile */
 
 @import url('https://fonts.googleapis.com/css?family=Proxima+Nova');
+
 /* Custom bootstrap */
 body {
     /* font-family: Garamond, sans-serif; */
@@ -36,6 +37,7 @@ body {
         font-size: 1.0rem;
     }
 }
+
 /* End For mobile */
 
 h1,
@@ -70,6 +72,7 @@ p {
     font-size: 18px;
     font-weight: 600;
 }
+
 /* End Custom bootstrap */
 
 .margin-large-y {
@@ -80,8 +83,8 @@ p {
     color: var(--primary-red);
     position: relative;
 }
-/*** End Basic ***/
 
+/*** End Basic ***/
 
 
 
@@ -100,6 +103,7 @@ p {
 .bot-avatar {
     /* background-image: url("../imgs/bot-image-s02.jpg"); */
 }
+
 /*** End Custom chat-style.css ***/
 
 
@@ -595,6 +599,7 @@ p {
     border-color: rgb(18, 28, 45);
     transition: all 0.3s ease-in-out;
 }
+
 /*** End Bootstrap Modal For Contact Box ***/
 
 
@@ -606,37 +611,6 @@ p {
     border-radius: 20px;
 }
 
-.s-slide .carousel-item {
-    /* height: 500px;
-    overflow: hidden; */
-}
-
-.s-slide .carousel-item img {
-    /* max-height: 160%;
-    height: auto;  
-    width: 100%;  
-    object-fit: cover;   */
-}
-
-.s-slide .carousel-inner .carousel-caption.grad-an {
-    display: inline-block;
-    background-image: linear-gradient(-45deg, #f04f1e, #f04f1e, #fff, #fff, #f04f1e, #f04f1e) !important;
-    background-size: 400% !important;
-    background-clip: text;
-    -webkit-background-clip: text;
-    text-fill-color: transparent;
-    -webkit-text-fill-color: transparent;
-    -webkit-animation: Gradient 5s ease infinite !important;
-    -moz-animation: Gradient 5s ease infinite !important;
-    animation: Gradient 5s ease infinite !important;  /* This keyframes is defined above */
-}
-
-.s-slide .carousel-inner .carousel-caption h1 {
-    /* font-weight: 900; */
-    font-size: 50px;
-}
-
-/**********************/
 .s-slide .carousel-item .img-place {
     bottom: 0;
     display: block;
@@ -662,8 +636,8 @@ p {
 .s-slide .carousel-item img {
     max-height: 140%;
     /* height: 100%; */
-    width: 100%;  
-    object-fit: cover;  
+    width: 100%;
+    object-fit: cover;
 }
 
 .s-slide .content-row {
@@ -681,6 +655,20 @@ p {
     /* font-size: 40px; */
 }
 
+/* For mobile */
+@media (max-width: 47.9em) {
+    .s-slide .content-row {
+        top: 15%;
+        left: 30%;
+    }
+
+    .s-slide .content-body {
+        font-size: 20px;
+    }
+}
+
+/* End For mobile */
+
 .s-slide .content-body .grad-an {
     display: inline-block;
     background-image: linear-gradient(-45deg, #f04f1e, #f04f1e, #000, #000, #f04f1e, #f04f1e) !important;
@@ -691,9 +679,9 @@ p {
     -webkit-text-fill-color: transparent;
     -webkit-animation: Gradient 5s ease infinite !important;
     -moz-animation: Gradient 5s ease infinite !important;
-    animation: Gradient 5s ease infinite !important;  /* This keyframes is defined above */
+    animation: Gradient 5s ease infinite !important;
+    /* This keyframes is defined above */
 }
-
 
 .s-slide .carousel-control-prev,
 .s-slide .carousel-control-next {
@@ -723,6 +711,18 @@ p {
     background: var(--primary-green);
     color: #fff;
 }
+
+/* For mobile */
+@media (max-width: 47.9em) {
+    .s-slide .carousel-control-prev,
+    .s-slide .carousel-control-next {
+        top: 75%;
+    }
+}
+
+/* End For mobile */
+
+
 
 
 
@@ -762,7 +762,7 @@ p {
 }
 
 .s-brand .brand-bar {
-    display: inline-block;    
+    display: inline-block;
     animation: scroll 15s infinite linear;
 }
 
@@ -782,8 +782,6 @@ p {
     margin: 0 30px;
     /* Adjust the spacing between logos */
 }
-
-
 
 
 
@@ -831,6 +829,7 @@ p {
     border-color: rgb(18, 28, 45);
     transition: all 0.3s ease-in-out;
 }
+
 /* End Custom bootstrap */
 
 
@@ -841,11 +840,11 @@ p {
 .s-bullet {
     margin-top: 70px;
     margin-bottom: 60px;
-
 }
 
 .s-bullet .heading-1 {
-    font-size: 50px;  /* h1(37px) */
+    font-size: 50px;
+    /* h1(37px) */
     margin-bottom: 40px;
     line-height: 1.1;
 }
@@ -860,7 +859,8 @@ p {
     -webkit-text-fill-color: transparent;
     -webkit-animation: Gradient 5s ease infinite !important;
     -moz-animation: Gradient 5s ease infinite !important;
-    animation: Gradient 5s ease infinite !important;  /* This keyframes is defined above */
+    animation: Gradient 5s ease infinite !important;
+    /* This keyframes is defined above */
 }
 
 /* Custon bootstrap */
@@ -877,6 +877,7 @@ p {
     border-color: rgb(18, 28, 45);
     transition: 0.2s ease-in-out;
 }
+
 /* Custon bootstrap */
 
 .s-bullet .content-container {
@@ -931,6 +932,7 @@ p {
     position: relative;
     z-index: 2;
 }
+
 /* End Custom bootstrap */
 
 
@@ -999,7 +1001,6 @@ p {
 
 
 
-
 /*** Testimonial ***/
 .s-testimonial .section-title h1 {
     border-right: 1px solid var(--primary-green);
@@ -1030,6 +1031,7 @@ p {
 }
 
 @media (min-width: 768px) {
+
     .testimonial-carousel::before,
     .testimonial-carousel::after {
         width: 200px;
@@ -1037,6 +1039,7 @@ p {
 }
 
 @media (min-width: 992px) {
+
     .testimonial-carousel::before,
     .testimonial-carousel::after {
         width: 300px;
@@ -1096,8 +1099,9 @@ p {
 
 /*** Matrix Number ***/
 .s-matrix .typed-text {
-    font-size: 37px; /* h1(37px) */
-    font-weight:600;
+    font-size: 37px;
+    /* h1(37px) */
+    font-weight: 600;
     padding: 0 5px;
     padding-bottom: 25px;
 }
@@ -1129,8 +1133,19 @@ p {
     width: 450px;
     height: 380px;
     overflow: hidden;
-
 }
+
+/* For Mobile */
+@media (max-width: 47.9em) {
+    .s-matrix .matrix-item .counter-number {
+        font-size: 20px;
+    }
+    .s-matrix .img-place {
+        width: 350px;
+        height: auto;
+    }
+}
+/* End For Mobile */
 
 /* Custom bootstrap */
 .s-matrix .img-place img {
@@ -1142,10 +1157,6 @@ p {
 }
 
 /* End Custom bootstrap */
-
-
-
-
 
 
 
@@ -1169,10 +1180,23 @@ p {
 }
 
 .s-question .typed-text {
-    font-size: 40px;  /* h1(37px) */
+    font-size: 40px; /* h1(37px) */
     font-weight: 600;
     margin-bottom: 40px;
 }
+
+/* For Mobile */
+@media (max-width: 47.9em) {
+    .s-question .bg-banner {
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    .s-question .typed-text {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+}
+/* End For Mobile */
 
 .s-question .btn-custom {
     padding-top: 10px;
@@ -1209,9 +1233,16 @@ p {
     transition: .3s;
 }
 
-.s-footer .img-place img{
+.s-footer .img-place {
     width: 205px;
     height: auto;
+    overflow: hidden;
+}
+
+.s-footer .img-place img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .s-footer .footer-link {
@@ -1241,19 +1272,32 @@ p {
     font-size: 14px;
 }
 
+/* For Mobile */
+@media (max-width: 47.9em) {
+
+}
+/* End For Mobile */
 
 
 
 
 
-
-/********** Sub - services.html **********/
+/******************** Sub - services.html ********************/
 /*** Description ***/
 .s-description .img-place {
     height: 500px;
     width: 500px;
     overflow: hidden;
 }
+
+/* For Mobile */
+@media (max-width: 47.9em) {
+    .s-description .img-place {
+        width: 330px;
+        height: auto;
+    }
+}
+/* End For Mobile */
 
 .s-description .img-place img {
     height: 100%;
@@ -1321,7 +1365,8 @@ p {
 .s-gridbox .grid-item-area .area-head {
     margin-top: 14px;
     margin-bottom: 70px;
-    font-size: 43px; /* h1(37px) */
+    font-size: 43px;
+    /* h1(37px) */
     font-weight: 600;
     line-height: 1.25;
 }
@@ -1394,12 +1439,7 @@ p {
 
 
 
-
-
-
-
-
-/********** Sub - about.html **********/
+/******************** Sub - about.html ********************/
 /*** Our Background ***/
 /* Don't chang any style here. Change it in "s-description" in services.html */
 
@@ -1422,6 +1462,8 @@ p {
     width: auto;
     height: auto; */
 }
+
+
 
 
 
@@ -1466,23 +1508,22 @@ p {
     /* display: inline-block;    */
     display: flex;
     animation: scroll 15s infinite linear;
+    /* This animation is defined above */
 }
 
 .s-team .team-bar2 {
     /* display: inline-block;    */
     display: flex;
     animation: scroll 20s infinite linear;
+    /* This animation is defined above */
 }
 
-/* @keyframes scroll {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(-100%);
-    }
-} */
+.s-team .team-bar3 {
+    /* display: inline-block;    */
+    display: flex;
+    animation: scroll 18s infinite linear;
+    /* This animation is defined above */
+}
 
 .s-team .member-card {
     /* width: 150px;
@@ -1491,6 +1532,14 @@ p {
     /* Adjust the spacing between logos */
     white-space: wrap;
 }
+
+/* For Mobile */
+@media (max-width: 47.9em) {
+    .s-team .member-card {
+        margin: 0 10px;
+    }
+}
+/* End For Mobile */
 
 .s-team .member-image {
     width: 150px;
@@ -1501,11 +1550,7 @@ p {
 
 
 
-
-
-
-
-/********** Sub - faq.html **********/
+/******************** Sub - faq.html ********************/
 /*** Description ***/
 /* (Similar with "s-description" in services.html) */
 
@@ -1547,6 +1592,7 @@ p {
     box-shadow: none;
     outline: 3px solid var(--primary-green);
 }
+
 /* End Custom bootstrap */
 
 .s-allquestion .card-header .btn.has-icon {
@@ -1591,16 +1637,13 @@ p {
 .s-allquestion .card {
     border: none;
 }
+
 /* End Custom bootstrap */
 
 
 
 
-
-
-
-
-/********** Sub - volunteers.html **********/
+/******************** Sub - volunteers.html ********************/
 /*** Volunteers Service Bar ***/
 /* (Similar with "brand-bar" in index.html) */
 .s-service-volunteers .service-bar-wrapper {
@@ -1679,18 +1722,18 @@ p {
 
 
 
+
+
 /*** Bullet Point ***/
 /* (Similar with "Bullet Point" in index.html) */
-.s-bullet.subpage-volunteers .heading-1{
-    margin-bottom: 10px; /* Originally 40px */
+.s-bullet.subpage-volunteers .heading-1 {
+    margin-bottom: 10px;
+    /* Originally 40px */
 }
-
 
 
 /*** Description Left ***/
 /* (Similar with "Description Left" in services.html) */
-
-
 
 
 /*** Testimonial-Volunteers ***/
@@ -1722,6 +1765,7 @@ p {
         font-size: 0.8rem;
     }
 }
+
 /* End For mobile */
 
 .s-testi-volunteers .img-place img {

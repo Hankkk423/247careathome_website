@@ -85,6 +85,7 @@ p {
 }
 
 /*** End Basic ***/
+/* Screen: (576px,768px,992px,1200px,1600px,1920px,) */
 
 
 
@@ -1295,20 +1296,16 @@ p {
 /******************** Sub - services.html ********************/
 /*** Description ***/
 .s-description .img-place {
-    height: 500px;
-    width: 750px;
+    height: 470px;
+    width: 700px;
     overflow: hidden;
-}
-
-.s-description .img-place.temp {
-    /* width: 700px; */
 }
 
 /* For Mobile */
 @media (max-width: 47.9em) {
     .s-description .img-place {
-        width: 330px;
-        height: auto;
+        width: 350px;
+        height: 210px;
     }
 }
 /* End For Mobile */
@@ -1488,12 +1485,12 @@ p {
 /* Don't chang any style here. Change it in "s-gridbox" in services.html */
 .s-gridbox.subpage-about .grid-item-area .area-img-place img {
     height: 100%;
-    width: 87%;
+    width: 85%;
 }
 
 .s-gridbox.subpage-about .grid-item-area-5 .area-5-img-place img {
     height: 100%;
-    width: 78%;
+    width: 90%;
 }
 
 
@@ -1583,6 +1580,10 @@ p {
 /******************** Sub - faq.html ********************/
 /*** Description ***/
 /* (Similar with "s-description" in services.html) */
+.s-description.subpage-faq .img-place {
+    height: 500px;
+    width: 500px;
+}
 
 /*** Frequent Ask Question ***/
 .s-allquestion .card-accordion {
@@ -1684,6 +1685,7 @@ p {
     white-space: nowrap;
     overflow: hidden;
     position: relative;
+    display: flex;
     /* border-top: 1px solid #0000005b; */
     /* border-bottom: 1px solid #000000; */
 }
@@ -1715,7 +1717,7 @@ p {
 .s-service-volunteers .service-bar {
     display: flex;
     /* display: inline-block; */
-    animation: scroll 20s infinite linear;
+    animation: scroll 40s infinite linear;
 }
 
 .s-service-volunteers .service-card {

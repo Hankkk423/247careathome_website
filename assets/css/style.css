@@ -620,7 +620,7 @@ p {
     right: 0;
     top: 0;
     z-index: -1; */
-    height: 600px;
+    height: 580px;
     width: 100%;
 }
 
@@ -716,7 +716,7 @@ p {
 @media (max-width: 47.9em) {
     .s-slide .carousel-control-prev,
     .s-slide .carousel-control-next {
-        top: 75%;
+        top: 95%;
     }
 }
 
@@ -788,7 +788,7 @@ p {
 
 /*** Eligible ***/
 .s-eligible .img-place {
-    height: 380px;
+    height: 360px;
     width: 350px;
     overflow: hidden;
     /* border-radius: 5%; */
@@ -798,6 +798,7 @@ p {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    object-position: 43% 25%;
     /* border: 10px solid #ccc; */
     border-radius: 10%;
 }
@@ -1150,8 +1151,9 @@ p {
 /* Custom bootstrap */
 .s-matrix .img-place img {
     width: 100%;
-    height: auto;
+    height: 100%;
     /* border: 10px solid #ccc; */
+    object-fit: cover;
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
@@ -1294,8 +1296,12 @@ p {
 /*** Description ***/
 .s-description .img-place {
     height: 500px;
-    width: 500px;
+    width: 750px;
     overflow: hidden;
+}
+
+.s-description .img-place.temp {
+    /* width: 700px; */
 }
 
 /* For Mobile */
@@ -1311,6 +1317,7 @@ p {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 3%;
 }
 
 .s-description .content-container .content-title {
@@ -1327,7 +1334,7 @@ p {
 /*** Fun Fact ***/
 /* (Similar with s-funfact in index.html) */
 .subpage-services.s-funfact {
-    background-image: url(../imgs/page-services/bg_banner_s02.jpg);
+    background-image: url(../imgs/page-services/bg_banner-s01.jpg);
 }
 
 
@@ -1379,8 +1386,22 @@ p {
     line-height: 1.25;
 }
 
-.s-gridbox .grid-item-area .area-img {
-    background-image: url(../imgs/page-services/grid-s01.jpg);
+.s-gridbox .grid-item-area .area-img-place {
+    height: 100%;
+    width: auto;
+    overflow: hidden;
+    padding-top: 3%;
+}
+
+.s-gridbox .grid-item-area .area-img-place img {
+    height: 100%;
+    width: 87%;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+/* .s-gridbox .grid-item-area .area-img {
+    background-image: url(../imgs/page-services/grid-s03.jpg);
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1389,7 +1410,7 @@ p {
     padding-bottom: 0;
     width: 250px;
     height: auto;
-}
+} */
 
 .s-gridbox .grid-item-area-2 {
     grid-area: Area-2;
@@ -1420,7 +1441,20 @@ p {
     grid-area: Area-5;
 }
 
-.s-gridbox .grid-item-area-5 .area-5-img {
+.s-gridbox .grid-item-area-5 .area-5-img-place {
+    height: 100%;
+    width: auto;
+    overflow: hidden;
+}
+
+.s-gridbox .grid-item-area-5 .area-5-img-place img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+/* .s-gridbox .grid-item-area-5 .area-5-img {
     background-image: url(../imgs/page-services/grid-s02.jpg);
     background-position: 50%;
     background-repeat: no-repeat;
@@ -1428,10 +1462,9 @@ p {
     border-radius: 16px;
     padding-top: 73%;
     padding-bottom: 0;
-    /* width: 350px; */
     width: auto;
     height: auto;
-}
+} */
 
 
 
@@ -1453,26 +1486,15 @@ p {
 
 /*** Grid Box ***/
 /* Don't chang any style here. Change it in "s-gridbox" in services.html */
-.s-gridbox.subpage-about .grid-item-area .area-img {
-    background-image: url(../imgs/page-about/grid-s01.jpg);
-    /* background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: auto;
-    height: auto; */
+.s-gridbox.subpage-about .grid-item-area .area-img-place img {
+    height: 100%;
+    width: 87%;
 }
 
-.s-gridbox.subpage-about .grid-item-area-5 .area-5-img {
-    background-image: url(../imgs/page-about/grid-s02.jpg);
-    /* background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: auto;
-    height: auto; */
+.s-gridbox.subpage-about .grid-item-area-5 .area-5-img-place img {
+    height: 100%;
+    width: 78%;
 }
-
-
-
 
 
 /*** Team Bar ***/

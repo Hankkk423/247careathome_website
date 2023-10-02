@@ -13,7 +13,6 @@
         --page-padding-x: 0px;
     }
 }
-
 /* End For mobile */
 
 @import url('https://fonts.googleapis.com/css?family=Proxima+Nova');
@@ -31,13 +30,17 @@ body {
     padding: 0 var(--page-padding-x);
 }
 
+@media (max-width: 1200px) {
+    body {
+        font-size: 1.0rem;
+    }
+}
 /* For mobile */
 @media (max-width: 47.9em) {
     body {
         font-size: 1.0rem;
     }
 }
-
 /* End For mobile */
 
 h1,
@@ -534,21 +537,19 @@ p {
     margin-bottom: 25px;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 991.98px) {
     .s-hero .hero-text {
-        font-size: 40px;
+        font-size: 60px;
     }
 }
-
 @media (max-width: 767.98px) {
     .s-hero .hero-text {
         font-size: 50px;
     }
 }
-
-@media (max-width: 991.98px) {
+@media (max-width: 575.98px) {
     .s-hero .hero-text {
-        font-size: 60px;
+        font-size: 40px;
     }
 }
 
@@ -693,7 +694,7 @@ p {
 }
 @media (max-width: 1200px) {
     .s-slide .content-row {
-        top: 5%;
+        top: 10%;
         left: 17%;
     }
     .s-slide .content-body {
@@ -1242,8 +1243,8 @@ p {
 }
 
 .s-question .bg-banner {
-    padding-bottom: 100px;
-    padding-top: 100px;
+    padding-bottom: 6%;
+    padding-top: 6%;
     background-color: var(--primary-red-bg);
     /* border-radius: 20px 20px 20px 20px; */
     border-radius: 40px;
@@ -1364,7 +1365,7 @@ p {
 /*** Description ***/
 .s-description .img-place {
     height: 470px;
-    width: 700px;
+    width: auto;
     overflow: hidden;
 }
 
@@ -1389,6 +1390,12 @@ p {
     font-weight: 600;
 }
 
+@media (max-width: 1200px) {
+    .s-description .content-container .content-title {
+        font-size: 38px;
+    }
+}
+
 .s-description .content-container p {
     /* line-height: 1.0; */
 }
@@ -1398,6 +1405,7 @@ p {
 /*** Fun Fact ***/
 /* (Similar with s-funfact in index.html) */
 .subpage-services.s-funfact {
+    padding: 45px 0;
     background-image: url(../imgs/page-services/bg_banner-s01.jpg);
 }
 
@@ -1413,10 +1421,10 @@ p {
     grid-row-gap: 50px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
     .s-gridbox .gridbox-container {
-        /* grid-column-gap: 20px;
-        grid-row-gap: 20px; */
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
     }
 }
 
@@ -1449,6 +1457,11 @@ p {
     font-weight: 600;
     line-height: 1.25;
 }
+@media (max-width: 1200px) {
+    .s-gridbox .grid-item-area .area-head {
+        font-size: 36px;
+    }
+}
 
 .s-gridbox .grid-item-area .area-img-place {
     height: 100%;
@@ -1459,7 +1472,7 @@ p {
 
 .s-gridbox .grid-item-area .area-img-place img {
     height: 100%;
-    width: 87%;
+    width: 95%;
     object-fit: cover;
     border-radius: 5%;
 }
@@ -1491,6 +1504,12 @@ p {
 
 .s-gridbox .gridbox-container .head-3 {
     font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+    .s-gridbox .gridbox-container .head-3 {
+        font-size: 14px;
+    }
 }
 
 .s-gridbox .grid-item-area-3 {
@@ -1615,18 +1634,23 @@ p {
 .s-team .team-bar3 {
     /* display: inline-block;    */
     display: flex;
-    animation: scroll 18s infinite linear;
+    animation: scroll 16s infinite linear;
     /* This animation is defined above */
 }
 
 .s-team .member-card {
     /* width: 150px;
     height: 50px; */
-    margin: 0 70px;
+    margin: 0 60px;
     /* Adjust the spacing between logos */
     white-space: wrap;
 }
 
+@media (max-width: 1200px) {
+    .s-team .member-card {
+        margin: 0 40px;
+    }
+}
 /* For Mobile */
 @media (max-width: 47.9em) {
     .s-team .member-card {
@@ -1634,6 +1658,10 @@ p {
     }
 }
 /* End For Mobile */
+
+.s-team .member-card p{
+    font-size: 14px;
+}
 
 .s-team .member-image {
     width: 150px;
@@ -1651,6 +1679,12 @@ p {
     height: 500px;
     width: 500px;
 }
+@media (max-width: 47.9em) {
+    .s-description.subpage-faq .img-place {
+        height: 300px;
+        width: auto;
+    }
+}
 
 /*** Frequent Ask Question ***/
 .s-allquestion .card-accordion {
@@ -1658,6 +1692,18 @@ p {
     padding-right: 15%;
     border: none;
     border-top: 1px solid #ccc;
+}
+@media (max-width: 1200px) {
+    .s-allquestion .card-accordion {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+@media (max-width: 47.9em) {
+    .s-allquestion .card-accordion {
+        padding-left: 1%;
+        padding-right: 5%;
+    }
 }
 
 .s-allquestion .card-accordion:last-child {

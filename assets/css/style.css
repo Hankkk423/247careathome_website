@@ -905,6 +905,11 @@ p {
     margin-bottom: 40px;
     line-height: 1.1;
 }
+@media (max-width: 47.9em) {
+    .s-bullet .heading-1 {
+        font-size: 40px;
+    }
+}
 
 .s-bullet .grad-an {
     display: inline-block;
@@ -939,6 +944,11 @@ p {
 
 .s-bullet .content-container {
     margin-top: 80px;
+}
+@media (max-width: 47.9em) {
+    .s-bullet .content-container {
+        margin-top: 40px;
+    }
 }
 
 .s-bullet .bullet-item {

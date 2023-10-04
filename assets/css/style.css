@@ -30,7 +30,7 @@ body {
     padding: 0 var(--page-padding-x);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
     body {
         font-size: 1.0rem;
     }
@@ -88,7 +88,7 @@ p {
 }
 
 /*** End Basic ***/
-/* Screen: (576px,768px,992px,1200px,1600px,1920px,) */
+/* Screen: (576px,768px,992px,1300px,1600px,1920px,) */
 @media (max-width: 2048px) {
 
 }
@@ -98,7 +98,7 @@ p {
 @media (max-width: 1600px) {
     
 }
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
     
 }
 @media (max-width: 992px) {
@@ -692,7 +692,7 @@ p {
         font-size: 47px;
     }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
     .s-slide .content-row {
         top: 10%;
         left: 17%;
@@ -1400,7 +1400,7 @@ p {
     font-weight: 600;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
     .s-description .content-container .content-title {
         font-size: 38px;
     }
@@ -1431,7 +1431,7 @@ p {
     grid-row-gap: 50px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
     .s-gridbox .gridbox-container {
         grid-column-gap: 20px;
         grid-row-gap: 20px;
@@ -1467,7 +1467,7 @@ p {
     font-weight: 600;
     line-height: 1.25;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
     .s-gridbox .grid-item-area .area-head {
         font-size: 36px;
     }
@@ -1516,7 +1516,7 @@ p {
     font-size: 16px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
     .s-gridbox .gridbox-container .head-3 {
         font-size: 14px;
     }
@@ -1656,7 +1656,7 @@ p {
     white-space: wrap;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
     .s-team .member-card {
         margin: 0 40px;
     }
@@ -1703,7 +1703,7 @@ p {
     border: none;
     border-top: 1px solid #ccc;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
     .s-allquestion .card-accordion {
         padding-left: 10%;
         padding-right: 10%;

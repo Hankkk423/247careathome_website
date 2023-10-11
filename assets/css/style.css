@@ -85,6 +85,11 @@ p {
 .margin-large-y {
     margin: 80px 0;
 }
+@media (max-width: 1300px) {
+    .margin-large-y {
+        margin: 60px 0;
+    }
+}
 
 .text-red {
     color: var(--primary-red);

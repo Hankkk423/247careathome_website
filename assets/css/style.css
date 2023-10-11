@@ -29,7 +29,11 @@ body {
     background-color: #fff;
     padding: 0 var(--page-padding-x);
 }
-
+@media (min-width: 2000px) {
+    body {
+        padding: 0 160px;
+    }
+}
 @media (max-width: 1300px) {
     body {
         font-size: 1.0rem;
@@ -537,7 +541,7 @@ p {
     margin-bottom: 25px;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1300px) {
     .s-hero .hero-text {
         font-size: 60px;
     }
@@ -972,6 +976,11 @@ p {
 
 .s-bullet .content-container {
     margin-top: 80px;
+}
+@media (max-width: 1300px) {
+    .s-bullet .content-container {
+        margin-top: 60px;
+    }
 }
 @media (max-width: 47.9em) {
     .s-bullet .content-container {

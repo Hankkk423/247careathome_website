@@ -200,7 +200,7 @@ p {
     position: relative;
     display: block;
     opacity: 1;
-    width: 140px;
+    width: 180px;
     height: auto;
 }
 
@@ -1105,8 +1105,8 @@ p {
 
 /*** Testimonial ***/
 .s-testimonial .section-title h1 {
-    border-right: 1px solid var(--primary-green);
-    border-left: 1px solid var(--primary-green);
+    /* border-right: 1px solid var(--primary-green);
+    border-left: 1px solid var(--primary-green); */
     /* margin: 0 300px; */
 }
 
@@ -1919,6 +1919,7 @@ p {
 .s-testi-volunteers .testi-card {
     /* padding: 0 150px; */
     width: 80%;
+    height: 390px;
 }
 
 .s-testi-volunteers .img-place {
@@ -1931,6 +1932,7 @@ p {
     .s-testi-volunteers .testi-card {
         /* padding: 0 10px; */
         width: 100%;
+        height: 630px;
     }
 
     .s-testi-volunteers .img-place {

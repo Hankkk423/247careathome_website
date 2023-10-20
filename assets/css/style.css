@@ -1658,7 +1658,7 @@ p {
 .s-team .team-bar3 {
     /* display: inline-block;    */
     display: flex;
-    animation: scroll 23s infinite linear;
+    animation: scroll 26s infinite linear;
     /* This animation is defined above */
 }
 

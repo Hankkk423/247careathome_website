@@ -1644,28 +1644,28 @@ p {
 .s-team .team-bar {
     /* display: inline-block;    */
     display: flex;
-    animation: scroll 25s infinite linear;
+    animation: scroll 35s infinite linear;
     /* This animation is defined above */
 }
 
 .s-team .team-bar2 {
     /* display: inline-block;    */
     display: flex;
-    animation: scroll 20s infinite linear;
+    animation: scroll 30s infinite linear;
     /* This animation is defined above */
 }
 
 .s-team .team-bar3 {
     /* display: inline-block;    */
     display: flex;
-    animation: scroll 26s infinite linear;
+    animation: scroll 36s infinite linear;
     /* This animation is defined above */
 }
 
 .s-team .team-bar4 {
     /* display: inline-block;    */
     display: flex;
-    animation: scroll 30s infinite linear;
+    animation: scroll 40s infinite linear;
     /* This animation is defined above */
 }
 

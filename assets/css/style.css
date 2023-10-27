@@ -735,6 +735,7 @@ p {
     }
     .s-slide .content-body {
         font-size: 22px;
+        text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
     }
 }
 @media (max-width: 420px) {
@@ -1644,7 +1645,7 @@ p {
 .s-team .team-bar {
     /* display: inline-block;    */
     display: flex;
-    animation: scroll 35s infinite linear;
+    animation: scroll 40s infinite linear;
     /* This animation is defined above */
 }
 
@@ -1658,7 +1659,7 @@ p {
 .s-team .team-bar3 {
     /* display: inline-block;    */
     display: flex;
-    animation: scroll 36s infinite linear;
+    animation: scroll 38s infinite linear;
     /* This animation is defined above */
 }
 
@@ -1684,7 +1685,7 @@ p {
 /* For Mobile */
 @media (max-width: 47.9em) {
     .s-team .member-card {
-        margin: 0 10px;
+        margin: 0 15px;
     }
 }
 /* End For Mobile */
@@ -1694,10 +1695,19 @@ p {
 }
 
 .s-team .member-image {
-    width: 161px;
+    width: 170px;
     height: auto;
     /* Adjust the spacing between logos */
 }
+/* For Mobile */
+@media (max-width: 47.9em) {
+    .s-team .member-image {
+        width: 145px;
+        height: auto;
+        /* Adjust the spacing between logos */
+    }
+}
+/* End For Mobile */
 
 
 
@@ -1895,10 +1905,13 @@ p {
     width: 350px;
     height: auto;
     white-space: wrap;
+    overflow-wrap: break-word;
 }
 
 .s-service-volunteers .card-content p {
     font-size: 18px;
+    white-space: wrap;
+    overflow-wrap: break-word;
 }
 
 

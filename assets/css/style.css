@@ -800,7 +800,7 @@ p {
 /*** Brand Bar ***/
 .s-brand .brand-bar-wrapper {
     width: 100%;
-    margin: 30px 0;
+    margin: 45px 0;
     padding: 20px 0;
     background: white;
     white-space: nowrap;
@@ -834,7 +834,7 @@ p {
 
 .s-brand .brand-bar {
     display: inline-block;
-    animation: scroll 15s infinite linear;
+    animation: scroll 35s infinite linear;
 }
 
 @keyframes scroll {
@@ -848,15 +848,15 @@ p {
 }
 
 .s-brand .brand-logo {
-    width: 150px;
+    width: 140px;
     height: auto;
-    margin: 0 30px;
+    margin: 0 40px;
     /* Adjust the spacing between logos */
 }
 @media (max-width: 768px) {
     .s-brand .brand-logo {
-        width: 120px;
-        margin: 0 10px;
+        width: 60px;
+        margin: 0 15px;
     }
 }
 

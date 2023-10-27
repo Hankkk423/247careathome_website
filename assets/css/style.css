@@ -1916,7 +1916,7 @@ p {
 /* For mobile */
 @media (max-width: 47.9em) {
     .s-service-volunteers .card-content {
-        width: 200px;
+        width: auto;
         height: auto;
         white-space: wrap;
         overflow-wrap: break-word;

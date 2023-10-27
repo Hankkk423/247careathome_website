@@ -1914,9 +1914,9 @@ p {
     overflow-wrap: break-word;
 }
 /* For mobile */
-@media (max-width: 47.9em) {
+@media (max-width: 992px) {
     .s-service-volunteers .card-content {
-        width: auto;
+        width: 300px;
         height: auto;
         white-space: wrap;
         overflow-wrap: break-word;

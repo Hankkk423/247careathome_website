@@ -1913,6 +1913,21 @@ p {
     white-space: wrap;
     overflow-wrap: break-word;
 }
+/* For mobile */
+@media (max-width: 47.9em) {
+    .s-service-volunteers .card-content {
+        width: 200px;
+        height: auto;
+        white-space: wrap;
+        overflow-wrap: break-word;
+    }
+    .s-service-volunteers .card-content p {
+        font-size: 13px;
+        white-space: wrap;
+        overflow-wrap: break-word;
+    }
+}
+/* For mobile */
 
 
 

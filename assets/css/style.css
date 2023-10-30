@@ -1906,9 +1906,12 @@ p {
     height: auto;
     white-space: wrap;
     overflow-wrap: break-word;
+
+    padding: 0 10px;
 }
 
 .s-service-volunteers .card-content p {
+    display: flex;
     font-size: 18px;
     white-space: wrap;
     overflow-wrap: break-word;
@@ -1916,7 +1919,7 @@ p {
 /* For mobile */
 @media (max-width: 992px) {
     .s-service-volunteers .card-content {
-        width: 300px;
+        width: 270px;
         height: auto;
         white-space: wrap;
         overflow-wrap: break-word;

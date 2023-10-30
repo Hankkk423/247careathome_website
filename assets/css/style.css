@@ -1931,7 +1931,7 @@ p {
         white-space: wrap;
         overflow-wrap: break-word;
 
-        width: 200px;
+        /* width: 200px; */
     }
 }
 /* For mobile */

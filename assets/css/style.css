@@ -1932,6 +1932,7 @@ p {
         overflow-wrap: break-word;
 
         /* width: 200px; */
+        position: relative;
     }
 }
 /* For mobile */

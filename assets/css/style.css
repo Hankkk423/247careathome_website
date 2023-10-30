@@ -23,11 +23,8 @@
 
 /* Custom bootstrap */
 body {
-    /* font-family: Garamond, sans-serif; */
-    /* font-family: "Times New Roman", Times, sans-serif; */
     font-family: 'Proxima Nova', sans-serif;
     font-size: 1.15rem;
-    /* font-weight: 400; */
     line-height: 1.5;
     color: #222324;
     background-color: #fff;
@@ -78,7 +75,6 @@ p {
     font-size: 18px;
     font-weight: 600;
 }
-
 /* End Custom bootstrap */
 
 .margin-large-y {
@@ -134,7 +130,6 @@ p {
 .bot-avatar {
     /* background-image: url("../imgs/bot-image-s02.jpg"); */
 }
-
 /*** End Custom chat-style.css ***/
 
 
@@ -192,8 +187,6 @@ p {
 .s-header__logo-link {
     display: inline-block;
     padding: 1rem 0;
-    /* width: 105px;
-    height: 28px; */
 }
 
 .s-header__logo-img {
@@ -297,8 +290,7 @@ p {
     background: rgba(34, 35, 36, 0);
     visibility: hidden;
     transition: all 1s ease-in 0.4s;
-    overflow-y: auto;
-    /* Add this to enable vertical scrolling */
+    overflow-y: auto;  /* Add this to enable vertical scrolling */
     z-index: 999;
 }
 
@@ -629,10 +621,6 @@ p {
     display: block;
     left: 0;
     overflow: hidden;
-    /* position: absolute;
-    right: 0;
-    top: 0;
-    z-index: -1; */
     height: 580px;
     width: 100%;
 }
@@ -851,8 +839,7 @@ p {
 .s-brand .brand-logo {
     width: 140px;
     height: auto;
-    margin: 0 40px;
-    /* Adjust the spacing between logos */
+    margin: 0 40px;  /* Adjust the spacing between logos */
 }
 @media (max-width: 768px) {
     .s-brand .brand-logo {
@@ -868,7 +855,6 @@ p {
     height: 360px;
     width: 350px;
     overflow: hidden;
-    /* border-radius: 5%; */
 }
 
 .s-eligible .img-place img {
@@ -876,7 +862,6 @@ p {
     width: 100%;
     object-fit: cover;
     object-position: 43% 25%;
-    /* border: 10px solid #ccc; */
     border-radius: 10%;
 }
 
@@ -889,7 +874,6 @@ p {
 
 .s-eligible .btn-row {
     margin: 30px -10px 0;
-    /* margin-bottom: 50px; */
 }
 
 /* Custom bootstrap */
@@ -1105,12 +1089,6 @@ p {
 
 
 /*** Testimonial ***/
-.s-testimonial .section-title h1 {
-    /* border-right: 1px solid var(--primary-green);
-    border-left: 1px solid var(--primary-green); */
-    /* margin: 0 300px; */
-}
-
 .testimonial-carousel::before {
     position: absolute;
     content: "";
@@ -1284,7 +1262,6 @@ p {
     padding-bottom: 6%;
     padding-top: 6%;
     background-color: var(--primary-red-bg);
-    /* border-radius: 20px 20px 20px 20px; */
     border-radius: 40px;
 }
 
@@ -1332,7 +1309,6 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* color: var(--light); */
     border: 1px solid #000000;
     border-radius: 30px;
     transition: .3s;
@@ -1618,11 +1594,11 @@ p {
     display: flex;
 }
 
-/* .s-team .team-bar-wrapper:before,
+.s-team .team-bar-wrapper:before,
 .s-team .team-bar-wrapper:after {
     position: absolute;
     top: 0;
-    width: 250px;
+    width: 50px;
     height: 100%;
     content: " ";
     z-index: 2;
@@ -1636,43 +1612,37 @@ p {
 .s-team .team-bar-wrapper:after {
     right: 0;
     background: linear-gradient(to right, rgb(255, 255, 255, 0), white);
-} */
+}
 
 .s-team .team-bar-wrapper:hover .team-bar {
     /* animation-play-state: paused; */
 }
 
 .s-team .team-bar {
-    /* display: inline-block;    */
     display: flex;
     animation: scroll 40s infinite linear;
     /* This animation is defined above */
 }
 
 .s-team .team-bar2 {
-    /* display: inline-block;    */
     display: flex;
     animation: scroll 30s infinite linear;
     /* This animation is defined above */
 }
 
 .s-team .team-bar3 {
-    /* display: inline-block;    */
     display: flex;
     animation: scroll 38s infinite linear;
     /* This animation is defined above */
 }
 
 .s-team .team-bar4 {
-    /* display: inline-block;    */
     display: flex;
     animation: scroll 40s infinite linear;
     /* This animation is defined above */
 }
 
 .s-team .member-card {
-    /* width: 150px;
-    height: 50px; */
     margin: 0 50px;
     /* Adjust the spacing between logos */
     white-space: wrap;
@@ -1761,9 +1731,7 @@ p {
 /* Custom bootstrap */
 .s-allquestion .card-header .btn {
     background: transparent;
-    /* color: inherit;
-    display: block;
-    font-family: AvenirNext-DemiBold; */
+
     font-size: 18px;
     line-height: 1.3;
     margin: 0;
@@ -1809,7 +1777,6 @@ p {
     position: absolute;
     right: 0;
     top: 50%;
-    /* transform: translateY(-50%); */
     transition: .3s;
     width: 0;
 }
@@ -1848,7 +1815,7 @@ p {
 .s-service-volunteers .service-bar-wrapper:after {
     position: absolute;
     top: 0;
-    width: 150px;
+    width: 50px;
     height: 100%;
     content: " ";
     z-index: 2;
@@ -1870,8 +1837,7 @@ p {
 
 .s-service-volunteers .service-bar {
     display: flex;
-    /* display: inline-block; */
-    animation: scroll 50s infinite linear;
+    animation: scroll 80s infinite linear;
 }
 
 .s-service-volunteers .service-card {
@@ -1931,7 +1897,6 @@ p {
         white-space: wrap;
         overflow-wrap: break-word;
 
-        /* width: 200px; */
         position: relative;
     }
 }

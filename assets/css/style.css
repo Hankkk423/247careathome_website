@@ -1647,7 +1647,7 @@ p {
 
 .s-team .team-bar2 {
     display: flex;
-    animation: scroll 30s infinite linear;
+    animation: scroll 70s infinite linear;
     /* This animation is defined above */
 }
 

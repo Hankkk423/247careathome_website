@@ -6,17 +6,20 @@
     --primary-orange: #f04f1e;
     --page-padding-x: 120px;
 }
+
 @media (min-width: 2000px) {
     :root {
         --page-padding-x: 160px;
     }
 }
+
 /* For mobile */
 @media (max-width: 47.9em) {
     :root {
         --page-padding-x: 0px;
     }
 }
+
 /* End For mobile */
 
 @import url('https://fonts.googleapis.com/css?family=Proxima+Nova');
@@ -30,17 +33,20 @@ body {
     background-color: #fff;
     padding: 0 var(--page-padding-x);
 }
+
 @media (max-width: 1300px) {
     body {
         font-size: 1.0rem;
     }
 }
+
 /* For mobile */
 @media (max-width: 47.9em) {
     body {
         font-size: 1.0rem;
     }
 }
+
 /* End For mobile */
 
 h1,
@@ -75,11 +81,13 @@ p {
     font-size: 18px;
     font-weight: 600;
 }
+
 /* End Custom bootstrap */
 
 .margin-large-y {
     margin: 80px 0;
 }
+
 @media (max-width: 1300px) {
     .margin-large-y {
         margin: 60px 0;
@@ -93,27 +101,19 @@ p {
 
 /*** End Basic ***/
 /* Screen: (576px,768px,992px,1300px,1600px,1920px,) */
-@media (max-width: 2048px) {
+@media (max-width: 2048px) {}
 
-}
-@media (max-width: 1920px) {
-    
-}
-@media (max-width: 1600px) {
-    
-}
-@media (max-width: 1300px) {
-    
-}
-@media (max-width: 992px) {
-    
-}
-@media (max-width: 768px) {
-    
-}
-@media (max-width: 420px) {
+@media (max-width: 1920px) {}
 
-}
+@media (max-width: 1600px) {}
+
+@media (max-width: 1300px) {}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 420px) {}
 
 
 
@@ -130,6 +130,7 @@ p {
 .bot-avatar {
     /* background-image: url("../imgs/bot-image-s02.jpg"); */
 }
+
 /*** End Custom chat-style.css ***/
 
 
@@ -290,7 +291,8 @@ p {
     background: rgba(34, 35, 36, 0);
     visibility: hidden;
     transition: all 1s ease-in 0.4s;
-    overflow-y: auto;  /* Add this to enable vertical scrolling */
+    overflow-y: auto;
+    /* Add this to enable vertical scrolling */
     z-index: 999;
 }
 
@@ -311,6 +313,7 @@ p {
         padding: 4.5rem 0;
     }
 }
+
 /* End For mobile */
 
 /* Custom bootstrap */
@@ -318,6 +321,7 @@ p {
     padding-left: 2.1875rem;
     padding-right: 2.1875rem;
 }
+
 /* End Custom bootstrap */
 
 .s-header-bg-overlay .s-header__nav-menu {
@@ -334,12 +338,14 @@ p {
     transition: all 0.4s ease-in;
     transform: translate3d(0, 1.25rem, 0);
 }
+
 /* For mobile */
 @media (max-width: 47.9em) {
     .s-header-bg-overlay.-is-open .s-header__nav-menu-item {
         opacity: 1;
     }
 }
+
 /* End For mobile */
 @media (min-width: 34em) {
     .s-header-bg-overlay.-is-open .s-header__nav-menu-item {
@@ -455,6 +461,7 @@ p {
         opacity: 1;
     }
 }
+
 /* End For mobile */
 @media (min-width: 34em) {
     .s-header-bg-overlay.-is-open .s-header__action-item {
@@ -480,6 +487,7 @@ p {
     color: rgba(255, 255, 255, 0.4);
     text-transform: uppercase;
 }
+
 @media (max-width: 768px) {
     .s-header-bg-overlay .s-header__action-link {
         font-size: 0.9rem;
@@ -516,6 +524,7 @@ p {
     margin-top: 150px;
     margin-bottom: 50px;
 }
+
 /* End Custom bootstrap */
 
 .s-hero .hero-text {
@@ -524,16 +533,19 @@ p {
     line-height: 1;
     margin-bottom: 25px;
 }
+
 @media (max-width: 1300px) {
     .s-hero .hero-text {
         font-size: 60px;
     }
 }
+
 @media (max-width: 767.98px) {
     .s-hero .hero-text {
         font-size: 50px;
     }
 }
+
 @media (max-width: 575.98px) {
     .s-hero .hero-text {
         font-size: 40px;
@@ -607,6 +619,7 @@ p {
     border-color: rgb(18, 28, 45);
     transition: all 0.3s ease-in-out;
 }
+
 /*** End Bootstrap Modal For Contact Box ***/
 
 
@@ -624,29 +637,25 @@ p {
     height: 580px;
     width: 100%;
 }
-@media (max-width: 2048px) {
 
-}
-@media (max-width: 1920px) {
-    
-}
+@media (max-width: 2048px) {}
+
+@media (max-width: 1920px) {}
+
 @media (max-width: 1600px) {
     .s-slide .carousel-item .img-place {
         height: 500px;
     }
 }
-@media (max-width: 1300px) {
-    
-}
-@media (max-width: 992px) {
-    
-}
-@media (max-width: 768px) {
-    
-}
-@media (max-width: 420px) {
 
-}
+@media (max-width: 1300px) {}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 420px) {}
+
 /* For mobile */
 @media (max-width: 47.9em) {
     .s-slide .carousel-item .img-place {
@@ -674,15 +683,18 @@ p {
 
     display: none;
 }
+
 /* For mobile */
 @media (max-width: 768px) {
     .s-slide .carousel-item .normal-slide {
         display: none;
     }
+
     .s-slide .carousel-item .mobile-slide {
         display: block;
     }
 }
+
 /* End For mobile */
 
 .s-slide .content-row {
@@ -698,55 +710,64 @@ p {
     font-size: 47px;
 }
 
-@media (min-width: 2000px) {
+@media (min-width: 2000px) {}
 
-}
 @media (max-width: 1920px) {
     .s-slide .content-row {
         top: 11%;
         left: 13%;
     }
+
     .s-slide .content-body {
         font-size: 47px;
     }
 }
+
 @media (max-width: 1600px) {
     .s-slide .content-row {
         top: 15%;
         left: 17%;
     }
+
     .s-slide .content-body {
         font-size: 40px;
     }
 }
+
 @media (max-width: 1300px) {
     .s-slide .content-row {
         top: 10%;
         left: 17%;
     }
+
     .s-slide .content-body {
         font-size: 38px;
     }
 }
+
 @media (max-width: 992px) {
     .s-slide .content-row {
         top: 5%;
         left: 17%;
     }
+
     .s-slide .content-body {
         font-size: 26px;
     }
 }
+
 @media (max-width: 768px) {
     .s-slide .content-row {
         top: 15%;
         left: 6%;
     }
+
     .s-slide .content-body {
         font-size: 22px;
         /* text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); */
     }
 }
+
 @media (max-width: 420px) {
     .s-slide .content-row {
         /* display: none; */
@@ -798,11 +819,13 @@ p {
 
 /* For mobile */
 @media (max-width: 47.9em) {
+
     .s-slide .carousel-control-prev,
     .s-slide .carousel-control-next {
         top: 95%;
     }
 }
+
 /* End For mobile */
 
 
@@ -860,8 +883,10 @@ p {
 .s-brand .brand-logo {
     width: 140px;
     height: auto;
-    margin: 0 40px;  /* Adjust the spacing between logos */
+    margin: 0 40px;
+    /* Adjust the spacing between logos */
 }
+
 @media (max-width: 768px) {
     .s-brand .brand-logo {
         width: 60px;
@@ -912,6 +937,7 @@ p {
     border-color: rgb(18, 28, 45);
     transition: all 0.3s ease-in-out;
 }
+
 /* End Custom bootstrap */
 
 
@@ -928,6 +954,7 @@ p {
     margin-bottom: 40px;
     line-height: 1.1;
 }
+
 @media (max-width: 47.9em) {
     .s-bullet .heading-1 {
         font-size: 40px;
@@ -962,16 +989,19 @@ p {
     border-color: rgb(18, 28, 45);
     transition: 0.2s ease-in-out;
 }
+
 /* Custon bootstrap */
 
 .s-bullet .content-container {
     margin-top: 80px;
 }
+
 @media (max-width: 1300px) {
     .s-bullet .content-container {
         margin-top: 60px;
     }
 }
+
 @media (max-width: 47.9em) {
     .s-bullet .content-container {
         margin-top: 40px;
@@ -1008,6 +1038,7 @@ p {
     background-repeat: no-repeat;
     background-image: url(../imgs/bg_banner_s02.jpg);
 }
+
 @media (max-width: 1600px) {
     .s-funfact {
         padding: 70px 0;
@@ -1029,6 +1060,7 @@ p {
     position: relative;
     z-index: 2;
 }
+
 /* End Custom bootstrap */
 
 .s-funfact .grad-an {
@@ -1059,6 +1091,7 @@ p {
     font-size: 45px;
     font-weight: 600;
 }
+
 @media (max-width: 768px) {
     .s-feature .typed-text {
         font-size: 30px;
@@ -1081,6 +1114,7 @@ p {
         margin-bottom: 30px;
     }
 }
+
 /* End For Mobile */
 
 .s-feature .media-icon {
@@ -1099,12 +1133,14 @@ p {
 .s-feature .row-second {
     margin-bottom: 80px;
 }
+
 /* For Mobile */
 @media (max-width: 47.9em) {
     .s-feature .row-second {
         margin-bottom: 40px;
     }
 }
+
 /* End For Mobile */
 
 
@@ -1131,13 +1167,17 @@ p {
     background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
     z-index: 1;
 }
+
 @media (min-width: 768px) {
+
     .testimonial-carousel::before,
     .testimonial-carousel::after {
         width: 200px;
     }
 }
+
 @media (min-width: 992px) {
+
     .testimonial-carousel::before,
     .testimonial-carousel::after {
         width: 300px;
@@ -1150,20 +1190,18 @@ p {
     overflow: hidden;
     /* style="width: 90px; height: 90px;" */
 }
+
 @media (max-width: 1300px) {
     .testimonial-carousel .testimonial-item img {
         height: 150px;
     }
 }
-@media (max-width: 992px) {
-    
-}
-@media (max-width: 768px) {
-    
-}
-@media (max-width: 420px) {
 
-}
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 420px) {}
 
 .testimonial-carousel .owl-item .testimonial-text {
     border: 5px solid var(--light);
@@ -1245,16 +1283,19 @@ p {
     height: 380px;
     overflow: hidden;
 }
+
 /* For Mobile */
 @media (max-width: 47.9em) {
     .s-matrix .matrix-item .counter-number {
         font-size: 20px;
     }
+
     .s-matrix .img-place {
         width: 350px;
         height: auto;
     }
 }
+
 /* End For Mobile */
 
 /* Custom bootstrap */
@@ -1266,6 +1307,7 @@ p {
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
+
 /* End Custom bootstrap */
 
 
@@ -1287,20 +1329,24 @@ p {
 }
 
 .s-question .question-text {
-    font-size: 40px; /* h1(37px) */
+    font-size: 40px;
+    /* h1(37px) */
     margin-bottom: 40px;
 }
+
 /* For Mobile */
 @media (max-width: 47.9em) {
     .s-question .bg-banner {
         padding-bottom: 10px;
         padding-top: 10px;
     }
+
     .s-question .question-text {
         font-size: 20px;
         margin-bottom: 20px;
     }
 }
+
 /* End For Mobile */
 
 .s-question .btn-custom {
@@ -1340,12 +1386,14 @@ p {
     flex-direction: row;
     justify-content: flex-end;
 }
+
 /* For Mobile */
 @media (max-width: 47.9em) {
     .s-footer .logo-container {
         justify-content: flex-start;
     }
 }
+
 /* End For Mobile */
 
 .s-footer .img-place {
@@ -1398,6 +1446,7 @@ p {
     width: auto;
     overflow: hidden;
 }
+
 /* For Mobile */
 @media (max-width: 47.9em) {
     .s-description .img-place {
@@ -1405,6 +1454,7 @@ p {
         height: 210px;
     }
 }
+
 /* End For Mobile */
 
 .s-description .img-place img {
@@ -1418,15 +1468,33 @@ p {
     font-size: 45px;
     font-weight: 600;
 }
+
+/* For Vietnamese */
+.Viet .s-description .content-container .content-title {
+    font-size: 35px;
+}
+/* End For Vietnamese */
+
 @media (max-width: 1300px) {
     .s-description .content-container .content-title {
         font-size: 36px;
     }
+    /* For Vietnamese */
+    .Viet .s-description .content-container .content-title {
+        font-size: 26px;
+    }
+    /* End For Vietnamese */
 }
+
 @media (max-width: 768px) {
     .s-description .content-container .content-title {
         font-size: 30px;
     }
+    /* For Vietnamese */
+    .Viet .s-description .content-container .content-title {
+        font-size: 23px;
+    }
+    /* End For Vietnamese */
 }
 
 .s-description .content-container p {
@@ -1454,12 +1522,14 @@ p {
     grid-column-gap: 50px;
     grid-row-gap: 50px;
 }
+
 @media (max-width: 1300px) {
     .s-gridbox .gridbox-container {
         grid-column-gap: 20px;
         grid-row-gap: 20px;
     }
 }
+
 @media (max-width: 767px) {
     .s-gridbox .gridbox-container {
         max-width: 360px;
@@ -1489,6 +1559,7 @@ p {
     font-weight: 600;
     line-height: 1.25;
 }
+
 @media (max-width: 1300px) {
     .s-gridbox .grid-item-area .area-head {
         font-size: 36px;
@@ -1521,11 +1592,13 @@ p {
     font-size: 27px;
     font-weight: 600;
 }
+
 @media (max-width: 1300px) {
     .s-gridbox .gridbox-container .head-2 {
         font-size: 26px;
     }
 }
+
 @media (max-width: 768px) {
     .s-gridbox .gridbox-container .head-2 {
         font-size: 20px;
@@ -1535,11 +1608,13 @@ p {
 .s-gridbox .gridbox-container .head-3 {
     font-size: 18px;
 }
+
 @media (max-width: 1300px) {
     .s-gridbox .gridbox-container .head-3 {
         font-size: 16px;
     }
 }
+
 @media (max-width: 768px) {
     .s-gridbox .gridbox-container .head-3 {
         font-size: 18px;
@@ -1641,25 +1716,25 @@ p {
 
 .s-team .team-bar {
     display: flex;
-    animation: scroll 40s infinite linear;
+    animation: scroll 80s infinite linear;
     /* This animation is defined above */
 }
 
 .s-team .team-bar2 {
     display: flex;
-    animation: scroll 70s infinite linear;
+    animation: scroll 45s infinite linear;
     /* This animation is defined above */
 }
 
 .s-team .team-bar3 {
     display: flex;
-    animation: scroll 38s infinite linear;
+    animation: scroll 70s infinite linear;
     /* This animation is defined above */
 }
 
 .s-team .team-bar4 {
     display: flex;
-    animation: scroll 40s infinite linear;
+    animation: scroll 55s infinite linear;
     /* This animation is defined above */
 }
 
@@ -1668,20 +1743,23 @@ p {
     /* Adjust the spacing between logos */
     white-space: wrap;
 }
+
 @media (max-width: 1300px) {
     .s-team .member-card {
         margin: 0 30px;
     }
 }
+
 /* For Mobile */
 @media (max-width: 47.9em) {
     .s-team .member-card {
         margin: 0 15px;
     }
 }
+
 /* End For Mobile */
 
-.s-team .member-card p{
+.s-team .member-card p {
     font-size: 14px;
 }
 
@@ -1690,6 +1768,7 @@ p {
     height: auto;
     /* Adjust the spacing between logos */
 }
+
 /* For Mobile */
 @media (max-width: 47.9em) {
     .s-team .member-image {
@@ -1698,6 +1777,7 @@ p {
         /* Adjust the spacing between logos */
     }
 }
+
 /* End For Mobile */
 
 
@@ -1711,6 +1791,7 @@ p {
     height: 500px;
     width: 500px;
 }
+
 @media (max-width: 47.9em) {
     .s-description.subpage-faq .img-place {
         height: 300px;
@@ -1725,12 +1806,14 @@ p {
     border: none;
     border-top: 1px solid #ccc;
 }
+
 @media (max-width: 1300px) {
     .s-allquestion .card-accordion {
         padding-left: 10%;
         padding-right: 10%;
     }
 }
+
 @media (max-width: 47.9em) {
     .s-allquestion .card-accordion {
         padding-left: 1%;
@@ -1810,6 +1893,7 @@ p {
 .s-allquestion .card {
     border: none;
 }
+
 /* End Custom bootstrap */
 
 
@@ -1866,6 +1950,7 @@ p {
     margin: 0 30px;
     /* Adjust the spacing between card */
 }
+
 @media (max-width: 1300px) {
     .s-service-volunteers .service-card {
         margin: 0 10px;
@@ -1905,6 +1990,7 @@ p {
 
     position: relative;
 }
+
 /* For mobile */
 @media (max-width: 992px) {
     .s-service-volunteers .card-content {
@@ -1913,6 +1999,7 @@ p {
         white-space: wrap;
         overflow-wrap: break-word;
     }
+
     .s-service-volunteers .card-content p {
         font-size: 13px;
         white-space: wrap;
@@ -1921,7 +2008,14 @@ p {
         position: relative;
     }
 }
+
 /* For mobile */
+/* For Vietnamese */
+.Viet .s-service-volunteers .card-content p {
+    font-size: 16px;
+}
+
+/* End For Vietnamese */
 
 
 
@@ -1944,11 +2038,19 @@ p {
     height: 390px;
 }
 
+/* For Vietnamese */
+.Viet .s-testi-volunteers .testi-card {
+    height: 405px;
+}
+
+/* End For Vietnamese */
+
 .s-testi-volunteers .img-place {
     height: 350px;
     width: 350px;
     overflow: hidden;
 }
+
 /* For mobile */
 @media (max-width: 47.9em) {
     .s-testi-volunteers .testi-card {
@@ -1962,7 +2064,15 @@ p {
         width: 350px;
         overflow: hidden;
     }
+
+    /* For Vietnamese */
+    .Viet .s-testi-volunteers .testi-card {
+        height: 665px;
+    }
+
+    /* End For Vietnamese */
 }
+
 /* End For mobile */
 
 .s-testi-volunteers .img-place img {

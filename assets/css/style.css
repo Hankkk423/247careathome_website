@@ -1716,7 +1716,7 @@ p {
 
 .s-team .team-bar {
     display: flex;
-    animation: scroll 80s infinite linear;
+    animation: scroll 55s infinite linear;
     /* This animation is defined above */
 }
 
@@ -1728,7 +1728,7 @@ p {
 
 .s-team .team-bar3 {
     display: flex;
-    animation: scroll 70s infinite linear;
+    animation: scroll 75s infinite linear;
     /* This animation is defined above */
 }
 

@@ -124,13 +124,12 @@ p {
 }
 
 .header-avatar-image {
-    /* background-image: url("../imgs/bot-image-s02.jpg"); */
+    background-image: url("../imgs/bot-image-emily-s01.jpg");
 }
 
 .bot-avatar {
-    /* background-image: url("../imgs/bot-image-s02.jpg"); */
+    background-image: url("../imgs/bot-image-emily-s01.jpg");
 }
-
 /*** End Custom chat-style.css ***/
 
 

@@ -22,7 +22,6 @@ var handleCounterUp = function () {
 }
 
 
-
 // Handle Owl Carousel (require "owlcarousel.js" and "bootstrap-icons.css(bi-arrow)")
 var handleOwlCarousel = function () {
     $(".testimonial-carousel").owlCarousel({
@@ -48,7 +47,6 @@ var handleOwlCarousel = function () {
 }
 
 
-
 // Handle Wow Animation (require "animate.css" and "wow.js")
 var handleWow = function () {
     // Initiate the wowjs
@@ -58,26 +56,6 @@ var handleWow = function () {
 
 // Handle Dynamic Typing (require "typed.js")
 var handleTyped = function () {
-    // // Typed.js for dynamic typing
-    // var typed = new Typed('#typed', {
-    //     stringsElement: '#typed-strings', // ID of the element containing your strings
-    //     typeSpeed: 50, // Typing speed in milliseconds
-    //     backSpeed: 30, // Backspacing speed in milliseconds
-    //     backDelay: 1000, // Delay before starting to backspace
-    //     loop: true // Loop the typing animation
-    // });
-
-    // Initialize Typed.js for each element with the class "typed-text"
-    // $('.typed-text').each(function () {
-    //     var typed = new Typed($(this).find('#typed'), {
-    //         stringsElement: $(this).find('#typed-strings'),
-    //         typeSpeed: 50,
-    //         backSpeed: 30,
-    //         backDelay: 1000,
-    //         loop: true
-    //     });
-    // });
-
 
     // Get all elements with the class "typed-text"
     var typedTextElements = document.querySelectorAll('.typed-text');
@@ -94,8 +72,6 @@ var handleTyped = function () {
     });
 
 }
-
-
 
 
 

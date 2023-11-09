@@ -281,6 +281,14 @@ p {
     color: #fff;
 }
 
+.s-header__navbar .phone-number {
+    color: #ffffff;
+}
+
+.s-header__navbar .phone-number:hover {
+    color: #ffffff7a;
+}
+
 .s-header-bg-overlay {
     position: fixed;
     top: 0;

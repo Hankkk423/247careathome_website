@@ -709,8 +709,6 @@ p {
     font-size: 47px;
 }
 
-@media (min-width: 2000px) {}
-
 @media (max-width: 1920px) {
     .s-slide .content-row {
         top: 11%;
@@ -818,13 +816,11 @@ p {
 
 /* For mobile */
 @media (max-width: 47.9em) {
-
     .s-slide .carousel-control-prev,
     .s-slide .carousel-control-next {
         top: 95%;
     }
 }
-
 /* End For mobile */
 
 
@@ -936,7 +932,6 @@ p {
     border-color: rgb(18, 28, 45);
     transition: all 0.3s ease-in-out;
 }
-
 /* End Custom bootstrap */
 
 
@@ -1168,7 +1163,6 @@ p {
 }
 
 @media (min-width: 768px) {
-
     .testimonial-carousel::before,
     .testimonial-carousel::after {
         width: 200px;
@@ -1176,7 +1170,6 @@ p {
 }
 
 @media (min-width: 992px) {
-
     .testimonial-carousel::before,
     .testimonial-carousel::after {
         width: 300px;
@@ -1199,8 +1192,6 @@ p {
 @media (max-width: 992px) {}
 
 @media (max-width: 768px) {}
-
-@media (max-width: 420px) {}
 
 .testimonial-carousel .owl-item .testimonial-text {
     border: 5px solid var(--light);
@@ -1751,8 +1742,7 @@ p {
 }
 
 .s-team .member-card {
-    margin: 0 50px;
-    /* Adjust the spacing between logos */
+    margin: 0 50px;  /* Adjust the spacing between logos */
     white-space: wrap;
 }
 
@@ -1768,7 +1758,6 @@ p {
         margin: 0 15px;
     }
 }
-
 /* End For Mobile */
 
 .s-team .member-card p {
@@ -1778,7 +1767,6 @@ p {
 .s-team .member-image {
     width: 170px;
     height: auto;
-    /* Adjust the spacing between logos */
 }
 
 /* For Mobile */
@@ -1786,7 +1774,6 @@ p {
     .s-team .member-image {
         width: 145px;
         height: auto;
-        /* Adjust the spacing between logos */
     }
 }
 
@@ -2084,7 +2071,6 @@ p {
 
     /* End For Vietnamese */
 }
-
 /* End For mobile */
 
 .s-testi-volunteers .img-place img {

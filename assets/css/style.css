@@ -282,11 +282,7 @@ p {
 }
 
 .s-header__navbar .phone-number {
-    color: #ffffff;
-}
-
-.s-header__navbar .phone-number:hover {
-    color: #ffffff7a;
+    color: #fff;
 }
 
 .s-header-bg-overlay {

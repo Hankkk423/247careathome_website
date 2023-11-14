@@ -286,6 +286,9 @@ p {
     .s-header__navbar .tag-line .heading-5 {
         font-size: 1.15rem;  /* Originally 1.25rem */
     }
+    .s-header__navbar .tag-line {
+        height: 23px;
+    }
 }
 /* End For mobile */
 

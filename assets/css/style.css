@@ -197,6 +197,31 @@ p {
     height: auto;
 }
 
+.s-header__language {
+    font-size: 17px;
+    font-weight: 600;
+}
+/* For mobile */
+@media (max-width: 768px) {
+    .s-header__language {
+        font-size: 15px;
+    }
+}
+/* End For Mobile */
+
+.s-header__language .grad-an {
+    display: inline-block;
+    background-image: linear-gradient(-45deg, #ed1c24, #ed1c24, #191919, #191919, #ed1c24, #ed1c24) !important;
+    background-size: 400% !important;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: Gradient 5s ease infinite !important;
+    -moz-animation: Gradient 5s ease infinite !important;
+    animation: Gradient 5s ease infinite !important;
+}
+
 .s-header__trigger {
     position: relative;
     width: 3.125rem;

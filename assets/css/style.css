@@ -200,6 +200,11 @@ p {
 .s-header__language {
     font-size: 17px;
     font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 35px;
 }
 /* For mobile */
 @media (max-width: 768px) {

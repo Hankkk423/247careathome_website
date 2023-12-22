@@ -328,6 +328,8 @@ p {
 
 .s-header__navbar .tag-line .btn-custom {
     display: inline-block;
+    margin: 0px;
+    padding: 0px;
     cursor: pointer;
     border: none;
     color: inherit;
@@ -345,11 +347,11 @@ p {
     display: inline-block;
     cursor: pointer;
     transition: color 0.2s;
-    margin: 0px 5px;
+    margin-left: 25px;
 }
 @media (max-width: 47.9em) {
     .s-header__navbar .tag-line .phone-link-container {
-        margin: 0px 3px;
+        margin-left: 3px;
     }
 }
 

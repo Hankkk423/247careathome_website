@@ -11,6 +11,16 @@ var handleOverlay = function () {
         trigger.toggleClass('-is-active');
     });
 }
+ 
+// Handle Click Icon
+var handleClickIcon = function () { 
+    $('.js__icon-homehealth, .js__icon-hospice').on('click', function () {
+        var phoneNumber = $(this).data('phone-number');
+        if (phoneNumber) {
+            window.location.href = 'tel:' + phoneNumber;
+        }
+    });
+}
 
 
 // Handle CounterUp (require "waypoint.js" and "counterup.js")
@@ -49,7 +59,7 @@ var handleOwlCarousel = function () {
 
 // Handle Wow Animation (require "animate.css" and "wow.js")
 var handleWow = function () {
-    // Initiate the wowjs
+    // // Initiate the wowjs
     new WOW().init();
 }
 
@@ -77,6 +87,7 @@ var handleTyped = function () {
 
 $(document).ready(function () {
     handleOverlay();
+    handleClickIcon();
     handleCounterUp();
     handleOwlCarousel();
     handleWow();

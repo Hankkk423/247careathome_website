@@ -94,6 +94,10 @@ p {
     }
 }
 
+.margin-small-top {
+    margin-top: 20px;
+}
+
 .text-red {
     color: var(--primary-red);
     position: relative;
@@ -322,8 +326,46 @@ p {
 }
 /* End For mobile */
 
-.s-header__navbar .phone-number {
+.s-header__navbar .tag-line .btn-custom {
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    color: inherit;
+    background-color: #fff0;
+    font-size: inherit;
+    font-weight: inherit;
+    transition: color 0.2s;
+}
+
+.s-header__navbar .tag-line .btn-custom:hover {
+    color: #000;
+}
+
+.s-header__navbar .tag-line .phone-link-container {
+    display: inline-block;
+    cursor: pointer;
+    transition: color 0.2s;
+    margin: 0px 5px;
+}
+@media (max-width: 47.9em) {
+    .s-header__navbar .tag-line .phone-link-container {
+        margin: 0px 3px;
+    }
+}
+
+.s-header__navbar .tag-line .phone-link-container:hover {
+    color: #000; /* Change the color on hover */
+}
+
+.s-header__navbar .tag-line .phone-number {
     color: #fff;
+    text-decoration: underline;
+    transition: color 0.2s;
+    text-decoration: none;
+}
+
+.s-header__navbar .tag-line .phone-number:hover {
+    color: #000;
 }
 
 .s-header-bg-overlay {
@@ -565,14 +607,19 @@ p {
 /*** Hero ***/
 /* Custom bootstrap */
 .s-hero .container {
-    margin-top: 150px;
-    margin-bottom: 50px;
+    margin-top: 170px;
+    margin-bottom: 30px;
 }
-
+@media (max-width: 575.98px) {
+    .s-hero .container {
+        margin-top: 150px;
+        margin-bottom: 0px;
+    }
+}
 /* End Custom bootstrap */
 
 .s-hero .hero-text {
-    font-size: 70px;
+    font-size: 66px;
     font-weight: 600;
     line-height: 1;
     margin-bottom: 25px;
@@ -586,13 +633,13 @@ p {
 
 @media (max-width: 767.98px) {
     .s-hero .hero-text {
-        font-size: 50px;
+        font-size: 46px;
     }
 }
 
 @media (max-width: 575.98px) {
     .s-hero .hero-text {
-        font-size: 40px;
+        font-size: 33px;
     }
 }
 
@@ -754,10 +801,18 @@ p {
     font-size: 47px;
 }
 
+@media (max-width: 2200px) {
+    .s-slide .content-row {
+        top: 11%;
+        left: 14%;
+        width: 77%; 
+    }
+}
+
 @media (max-width: 1920px) {
     .s-slide .content-row {
         top: 11%;
-        left: 13%;
+        left: 15%;
     }
 
     .s-slide .content-body {
@@ -1432,7 +1487,7 @@ p {
 /* End For Mobile */
 
 .s-footer .img-place {
-    width: 205px;
+    width: 220px;
     height: auto;
     overflow: hidden;
 }

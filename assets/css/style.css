@@ -1183,6 +1183,10 @@ p {
     color: #000
 }
 
+.s-feature .title .badge .flyer-link:hover {
+    color: var(--primary-red);
+}
+
 .s-feature .typed-text {
     font-size: 45px;
     font-weight: 600;
